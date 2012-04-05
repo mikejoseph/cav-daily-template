@@ -1,0 +1,41 @@
+{% extends "gryphon/base.mbl" %}
+
+{% block content %}
+
+{% import 'macros/render.mbl' as mediaRender %}
+{% set topGallery = galleries.shift() %}
+{% set recent = galleries.shift(10) %}
+
+<div id="galleries">
+<div id="col1">
+<h2>Featured Gallery:</h2>
+	<div><img src="{{ topGallery.url }}" alt="{{ topGallery.slug }}" /></div>
+	<h3 style="margin:0"><a href="{{ topGallery.urlDefault }}">{{ topGallery.title }}</a></h3>
+	
+	<br />
+	{{ topGallery.description_formatted }}
+	
+</div>
+
+<div id="col2">
+
+	<h2>Recent Galleries:</h2>
+		
+	<ul class="listview">
+	
+	{% for item in recent %}
+		<li>
+			<a href="{{ item.urlDefault }}">
+				{{ item.title }}
+				<span class="quiet">({{ item.created|date('m/d/y') }})</span>
+			</a>
+		</li>
+	{% endfor %}
+	
+	</ul>
+		
+</div>
+</div>
+
+
+{% endblock content %}

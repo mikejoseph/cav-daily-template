@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  font-family: verdana;
+  font-family: arial;
   font-size: 12px;
   width: 960px;
 }
@@ -302,7 +302,7 @@ a.footer-regular:hover {
   padding-left: 10px;
 }
 .article a {
-  font-family: sans-serif;
+  font-family: georgia;
   text-decoration: none;
   color: #334d6a;
 }

@@ -1,0 +1,76 @@
+{% extends "gryphon/base.tpl" %}
+{% block title %} :: Multimedia{% endblock %}
+{% block activeNav %}multimedia{% endblock %}
+{% block flag %}Multimedia{% endblock %}
+
+{% block links %}
+<link rel="alternate" type="application/rss+xml" title="Multimedia" href="{{ '/'|url }}multimedia.xml" />
+{% endblock %}
+
+{% block content %}
+{% import "macros/meta.tpl" as metaRender %}
+{% import "macros/render.tpl" as render %}
+
+{% set top = media.shift() %}
+
+<div class="grid_8">
+		<div class="mmb">{{ render.media(top) }}</div>
+		<br />
+		<h3 class="mmb"><a href="{{ top.urlMultimedia }}">{{ top.title }}</a></h3>
+		<div class="meta">
+			<span>Published {{ top.created|date('F j, Y') }}</span>
+			<span>{% if top.authors.length %}
+		{% set author = top.authors.shift() %}
+		By <a href="{{ author.url }}">{{ author.name|upper }}</a>
+		
+		
+		{% for author in top.authors %}
+		<span style="visibility:hidden;">By </span><a href="{{ author.url }}">{{ author.name|upper }}</a>
+		
+		{% endfor %}
+		
+	{% endif %}</span>	
+		</div>
+		<div class="mmb">{{ metaRender.byLine(top) }}</div>
+		<div class="abstract boot mmb">
+			{{ top.caption_formatted }}
+		</div>
+		
+		
+	
+	
+	<div class="clear"></div>
+	
+	{% for item in media %}
+	<div class="wrap grid_4 mb{% if loop.index % 2 == 1 %} alpha{% else %} omega{% endif %}">
+		{{ render.mm(item) }}
+	</div>
+	{% endfor %}
+	
+	<div class="clear"></div>
+	<hr class="mmb" />
+	<br />
+	<div class="pagination"><ul>
+	{% if pagination.getPrevious() %}
+		<li><a href="{{ pagination.getPrevious().url }}">&laquo;</a></li>
+	{% endif %}
+	{% for page in pagination.getPages() %}
+		{% if page.isCurrent() %}
+			<li class="active"><a href="{{ page.url }}">{{ page.label }}</a></li>
+		{% else %}
+			<li><a href="{{ page.url }}">{{ page.label }}</a></li>
+		{% endif %}
+	{% endfor %}
+	{% if pagination.getNext() %}
+		<li><a href="{{ pagination.getNext().url }}">&raquo;</a></li>
+	{% endif %}
+	</ul>
+	<div class="clear"></div></div>
+</div>
+
+<div class="grid_4">
+	{% include 'gryphon/main/sidebar/multimedia.tpl' %}
+</div>
+
+<div class="clear mbb"></div>
+{% endblock content %}

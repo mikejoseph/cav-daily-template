@@ -12,8 +12,6 @@
 {% endif %}
 
 {% set subActive %}{% block subActive %}{% endblock %}{% endset %}
-{% set description %}{% block description %}{% endblock %}{% endset %}
-{% set siteSlogan = config.get('dsw:siteslogan') %}
 
 <!DOCTYPE html>
 <head>
@@ -21,8 +19,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="Gryphon {{ config.appVersion }} (Foundry {{ config.foundryVersion }})" />
 
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="stylesheet" type="text/css" href="content.css" />
+	<link rel="stylesheet" type="text/css" href="{{ 'assets/dist/vendor.css'|asset }}" />
+	<link rel="stylesheet" type="text/css" href="{{ 'assets/dist/master.css'|asset }}" />
+
+	<script src="{{ 'assets/js/modernizr.min.js' }}"></script>
 
 </head>
 <body id="container">
@@ -336,12 +336,13 @@
 		<img src="images/gear.png" class="centered" alt="Detroit Softworks"/>
 	</div>
 	<div id="copyright">
-	<p>All Content &copy; Copyright 2012, The Cavalier Daily</p>
-	<p>Proudly powered by Detroit Softworks</p>
+		<p>All Content &copy; Copyright 2012, The Cavalier Daily</p>
 	</div>
 </div>
 <!-- End of footer-->
 
-{% include 'gryphon/main/tracker.tpl' %}
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ 'assets/js/bootstrap.min.js'|asset }}"></script>
+{# include 'gryphon/main/tracker.tpl' #}
 </body>
 </html>

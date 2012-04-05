@@ -1,1 +1,0 @@
-<img src="{{ 'gfn-blackletter/assets/icons/pdf.png'|url }}" /> <a href="{{ media.urlOriginal }}">{{ media.title }}</a>

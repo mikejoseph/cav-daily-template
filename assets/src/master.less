@@ -1,15 +1,18 @@
 @import "bootstrap/bootstrap.less";
 @import "bootstrap/responsive.less";
 
-@_darkblue: #00007a;
+@_darkblue: #091f5d;
 
+/* Utility Classes */
 .arial-stack {
 	font-family: Arial, sans-serif;
 }
 .georgia-stack {
 	font-family: "Georgia", "Times New Roman", Times, serif;
 }
-
+img.flex-image {
+	width: 100%;
+}
 .copy {
 	font-size: 13px;
 	line-height: 1.5em;
@@ -22,8 +25,47 @@
 	font-size: 16px;
 	line-height: 1.5em;
 }
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
 
-body{
+hr.spacer {
+	height: 10px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	background: inherit;
+
+	&.double {
+		height: 20px;
+	}
+	&.half {
+		height: 5px;
+	}
+}
+.box {
+	padding: 5px 10px;
+	margin: 0;
+
+	&.double {
+		padding: 10px 20px;
+	}
+	&.half {
+		padding: 2.5px 5px;
+	}
+}
+
+/* END Utility Classes */
+
+
+body {
 	.georgia-stack;
 	font-size: 16px;
 	color: @grayDarker;
@@ -38,10 +80,6 @@ nav {
 	.arial-stack;
 }
 
-.box {
-	padding: 10px;
-	margin: 0;
-}
 
 .by-line {
 	.arial-stack;
@@ -56,54 +94,8 @@ a {
 	}
 }
 
-header#main-header{
-	margin-bottom:20px;
 
-	#flag {
-		padding: 10px 0;
-	}
-	#top-ticker {
-		background: @_darkblue;
-		color: #fff;
-
-		time {
-			.small;
-		}
-
-		ul {
-			margin: 0;
-			padding: 0;
-
-			li {
-				.small;
-				display: inline;
-				margin: 0;
-				padding: 0;
-
-				a {
-					color: #fff;
-				}
-			}
-		}
-	}
-	#main-navigation {
-		background: @_darkblue;
-
-		ul {
-			margin: 0;
-			padding: 0;
-
-			li {
-				display: inline;
-
-				ul {
-					display: none;
-				}
-			}
-		}
-	}
-}
-
+@import "components/header.less";
 
 
 @import "style_orig.less";

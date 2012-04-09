@@ -31,83 +31,90 @@
 		<div class="row">
 			<div class="span12" id="top-ticker">
 				<div class="row">
-					<div class="span6">
+					<div class="span6"><div class="half box">
 						<time>February 15, 2012 | Rain 35 F | 7-Day Forecast | Charlotesville, VA</time>
-					</div>
-					<div class="span6">
+					</div></div>
+					<div class="span6"><div class="half box text-right">
 						<ul>
 							<li><a href="#">Advertise</a></li>
 							<li><a href="#">Classifieds</a></li>
 							<li><a href="#">Buy a Photo</a></li>
 							<li><a href="#">Find a Paper</a></li>
-							<li><a href="#"><img src="{{ 'assets/images/rss.png'|asset }}" />RSS</a></li>
+							<li><a href="#"><img src="{{ 'assets/images/rss.png'|asset }}" style="width:12px;" />RSS</a></li>
 						</ul>
-					</div>
+					</div></div>
 				</div> {# / .row #}
 			</div> {# / .span12 #}
 		</div> {# / .row #}
 
 		<div id="flag">
-			<a href="{{ '/'|url }}"><img src="{{ 'assets/images/flag.png'|asset }}" alt="Banner" id="main-flag" /></a>
+			<div>
+				<a href="{{ '/'|url }}"><img src="{{ 'assets/images/flag.png'|asset }}" alt="Banner" id="main-flag" class="flex-image" /></a>
+			</div>
 		</div>
 
-		<nav id="main-navigation">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Sports</a>
-					<ul>
-						<li><a href="#">Cross Country</a></li>
-						<li><a href="#">Field Hockey</a></li>
-						<li><a href="#">Football</a></li>
-						<li><a href="#">Men's Soccer</a></li>
-						<li><a href="#">Volleyball</a></li>
-						<li><a href="#">Women's Basketball</a></li>
-						<li><a href="#">Women's Soccer</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Opinion</a>
-					<ul>
-						<li><a href="#">Lead Editorial</a></li>
-						<li><a href="#">Letters to the Editor</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Tableau</a>
-					<ul>
-						<li><a href="#">Tableau Articles</a></li>
-						<li><a href="#">Tableau's Blog</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Life</a>
-					<ul>
-						<li><a href="#">Love Connection</a></li>
-						<li><a href="#">Love Connection Survey</a></li>
-					</ul>
-						</li>
-				<li><a href="#">Weeklies</a>
-					<ul>
-						<li><a href="#">Focus</a></li>
-						<li><a href="#">Health &amp; Science</a></li>
-					</ul>
-						</li>
-				<li><a href="#">Comics</a></li>
-				<li><a href="#">Blogs</a></li>
-				<li><a href="#">Photos</a></li>
-				<li><a href="#">Multimedia</a></li>
-			</ul>
-
-			<form id="searchbar">
-			<div>
-			<input id="searchfield" type="text" value="Search..." />
-			<img src="{{ 'assets/images/searchicon.png'|asset }}" alt="Go"/>
-			</div>
-			</form>
-
-		</nav>
+		<div class="row">
+			<nav class="span12">
+				<div id="main-navigation"><div class="row">
+					<div class="span8">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">News</a></li>
+							<li class="selected"><a href="#">Sports</a>
+								<ul>
+									<li><a href="#">Cross Country</a></li>
+									<li><a href="#">Field Hockey</a></li>
+									<li><a href="#">Football</a></li>
+									<li><a href="#">Men's Soccer</a></li>
+									<li><a href="#">Volleyball</a></li>
+									<li><a href="#">Women's Basketball</a></li>
+									<li><a href="#">Women's Soccer</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Opinion</a>
+								<ul>
+									<li><a href="#">Lead Editorial</a></li>
+									<li><a href="#">Letters to the Editor</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Tableau</a>
+								<ul>
+									<li><a href="#">Tableau Articles</a></li>
+									<li><a href="#">Tableau's Blog</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Life</a>
+								<ul>
+									<li><a href="#">Love Connection</a></li>
+									<li><a href="#">Love Connection Survey</a></li>
+								</ul>
+									</li>
+							<li><a href="#">Weeklies</a>
+								<ul>
+									<li><a href="#">Focus</a></li>
+									<li><a href="#">Health &amp; Science</a></li>
+								</ul>
+									</li>
+							<li><a href="#">Comics</a></li>
+							<li><a href="#">Blogs</a></li>
+							<li><a href="#">Photos</a></li>
+							<li><a href="#">Multimedia</a></li>
+						</ul>
+					</div> {# /.span10 #}
+					<div class="span4 text-right">
+						<form class="form-inline">
+							<div class="input-append">
+								<input type="text" placeholder="Search..." />
+								<a href="#" class="btn"><i class="icon-search"></i></a>
+							</div>
+						</form>
+					</div> {# /.span2 #}
+				</div></div> {# /.span12 /.row #}
+			</nav>
+		</div> {# /.row #}
 <!--End - Bottom Two Navigation Bars-->
 	</header>
 <!-- End of header -->
-
 
 	<div class="row">
 		<div class="span3">

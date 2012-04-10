@@ -274,7 +274,7 @@
 <footer>
 	<div class="row-fluid">
 		<div class="span3">
-			<ul>
+			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">News</a></h3></li>
 				<li><a href="#" class="footer-regular">Focus</a></li>
 				<li><a href="#" class="footer-regular">Grounds</a></li>
@@ -284,7 +284,7 @@
 				<li><a href="#" class="footer-regular">National</a></li>
 			</ul>
 
-			<ul>
+			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">Life</a></h3></li>
 				<li><a href="#" class="footer-regular">Columns</a></li>
 				<li><a href="#" class="footer-regular">Love Connections</a></li>
@@ -293,7 +293,7 @@
 		</div>
 
 		<div class="span3">
-			<ul>
+			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">Opinion</a></h3></li>
 				<li><a href="#" class="footer-regular">Cartoons</a></li>
 				<li><a href="#" class="footer-regular">Columns</a></li>
@@ -301,11 +301,11 @@
 				<li><a href="#" class="footer-regular">Letters to the Editor</a></li>
 			</ul>
 
-			<ul>
+			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">Blogs</a></h3></li>
 			</ul>
 
-			<ul>
+			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">Tableau</a></h3></li>
 				<li><a href="#" class="footer-regular">Art</a></li>
 				<li><a href="#" class="footer-regular">Movies</a></li>
@@ -314,7 +314,7 @@
 		</div>
 
 		<div class="span3">
-			<ul>
+			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">Sports</a></h3></li>
 				<li><a href="#" class="footer-regular">Cross Country</a></li>
 				<li><a href="#" class="footer-regular">Field Hockey</a></li>
@@ -331,14 +331,14 @@
 		</div>
 
 		<div class="span3">
-			<ul>
+			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">Multimedia</a></h3></li>
 				<li><a href="#" class="footer-regular">Audio</a></li>
 				<li><a href="#" class="footer-regular">Photo Gallery</a></li>
 				<li><a href="#" class="footer-regular">Video Reports</a></li>
 			</ul>
 
-			<ul>
+			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">About</a></h3></li>
 				<li><a href="#" class="footer-regular">Contact</a></li>
 				<li><a href="#" class="footer-regular">Corrections</a></li>

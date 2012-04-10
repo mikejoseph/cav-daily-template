@@ -268,87 +268,91 @@
 		</div>
 	</div>
 <!-- Footer -->
-<footer id="footer">
-	<div class="row">
+
+<hr class="double spacer" />
+
+<footer>
+	<div class="row-fluid">
 		<div class="span3">
-			<ul class="footer-links">
-			<li><a href="#" class="footer-header">News</a></li>
-			<li><a href="#" class="footer-regular">Focus</a></li>
-			<li><a href="#" class="footer-regular">Grounds</a></li>
-			<li><a href="#" class="footer-regular">Health and Sciences</a></li>
-			<li><a href="#" class="footer-regular">Local</a></li>
-			<li><a href="#" class="footer-regular">State</a></li>
-			<li><a href="#" class="footer-regular">National</a></li>
+			<ul>
+				<li><h3><a href="#" class="footer-header">News</a></h3></li>
+				<li><a href="#" class="footer-regular">Focus</a></li>
+				<li><a href="#" class="footer-regular">Grounds</a></li>
+				<li><a href="#" class="footer-regular">Health and Sciences</a></li>
+				<li><a href="#" class="footer-regular">Local</a></li>
+				<li><a href="#" class="footer-regular">State</a></li>
+				<li><a href="#" class="footer-regular">National</a></li>
 			</ul>
 
-			<ul class="footer-links">
-			<li><a href="#" class="footer-header">Life</a></li>
-			<li><a href="#" class="footer-regular">Columns</a></li>
-			<li><a href="#" class="footer-regular">Love Connections</a></li>
-			<li><a href="#" class="footer-regular">Love Connections Survey</a></li>
+			<ul>
+				<li><h3><a href="#" class="footer-header">Life</a></h3></li>
+				<li><a href="#" class="footer-regular">Columns</a></li>
+				<li><a href="#" class="footer-regular">Love Connections</a></li>
+				<li><a href="#" class="footer-regular">Love Connections Survey</a></li>
 			</ul>
 		</div>
 
 		<div class="span3">
-			<ul class="footer-links">
-			<li><a href="#" class="footer-header">Opinion</a></li>
-			<li><a href="#" class="footer-regular">Cartoons</a></li>
-			<li><a href="#" class="footer-regular">Columns</a></li>
-			<li><a href="#" class="footer-regular">Lead Editorials</a></li>
-			<li><a href="#" class="footer-regular">Letters to the Editor</a></li>
+			<ul>
+				<li><h3><a href="#" class="footer-header">Opinion</a></h3></li>
+				<li><a href="#" class="footer-regular">Cartoons</a></li>
+				<li><a href="#" class="footer-regular">Columns</a></li>
+				<li><a href="#" class="footer-regular">Lead Editorials</a></li>
+				<li><a href="#" class="footer-regular">Letters to the Editor</a></li>
 			</ul>
 
-			<ul class="footer-links">
-			<li><a href="#" class="footer-header">Blogs</a></li>
+			<ul>
+				<li><h3><a href="#" class="footer-header">Blogs</a></h3></li>
 			</ul>
 
-			<ul class="footer-links">
-			<li><a href="#" class="footer-header">Tableau</a></li>
-			<li><a href="#" class="footer-regular">Art</a></li>
-			<li><a href="#" class="footer-regular">Movies</a></li>
-			<li><a href="#" class="footer-regular">Music</a></li>
-			</ul>
-		</div>
-
-		<div class="span3">
-			<ul class="footer-links">
-			<li><a href="#" class="footer-header">Sports</a></li>
-			<li><a href="#" class="footer-regular">Cross Country</a></li>
-			<li><a href="#" class="footer-regular">Field Hockey</a></li>
-			<li><a href="#" class="footer-regular">Football</a></li>
-			<li><a href="#" class="footer-regular">Men's Basketball</a></li>
-			<li><a href="#" class="footer-regular">Men's Lacrosse</a></li>
-			<li><a href="#" class="footer-regular">Men's Soccer</a></li>
-			<li><a href="#" class="footer-regular">Swimming</a></li>
-			<li><a href="#" class="footer-regular">Volleyball</a></li>
-			<li><a href="#" class="footer-regular">Women's Basketball</a></li>
-			<li><a href="#" class="footer-regular">Women's Lacrosse</a></li>
-			<li><a href="#" class="footer-regular">Women's Soccer</a></li>
+			<ul>
+				<li><h3><a href="#" class="footer-header">Tableau</a></h3></li>
+				<li><a href="#" class="footer-regular">Art</a></li>
+				<li><a href="#" class="footer-regular">Movies</a></li>
+				<li><a href="#" class="footer-regular">Music</a></li>
 			</ul>
 		</div>
 
 		<div class="span3">
-			<ul class="footer-links">
-			<li><a href="#" class="footer-header">Multimedia</a></li>
-			<li><a href="#" class="footer-regular">Audio</a></li>
-			<li><a href="#" class="footer-regular">Photo Gallery</a></li>
-			<li><a href="#" class="footer-regular">Video Reports</a></li>
+			<ul>
+				<li><h3><a href="#" class="footer-header">Sports</a></h3></li>
+				<li><a href="#" class="footer-regular">Cross Country</a></li>
+				<li><a href="#" class="footer-regular">Field Hockey</a></li>
+				<li><a href="#" class="footer-regular">Football</a></li>
+				<li><a href="#" class="footer-regular">Men's Basketball</a></li>
+				<li><a href="#" class="footer-regular">Men's Lacrosse</a></li>
+				<li><a href="#" class="footer-regular">Men's Soccer</a></li>
+				<li><a href="#" class="footer-regular">Swimming</a></li>
+				<li><a href="#" class="footer-regular">Volleyball</a></li>
+				<li><a href="#" class="footer-regular">Women's Basketball</a></li>
+				<li><a href="#" class="footer-regular">Women's Lacrosse</a></li>
+				<li><a href="#" class="footer-regular">Women's Soccer</a></li>
+			</ul>
+		</div>
+
+		<div class="span3">
+			<ul>
+				<li><h3><a href="#" class="footer-header">Multimedia</a></h3></li>
+				<li><a href="#" class="footer-regular">Audio</a></li>
+				<li><a href="#" class="footer-regular">Photo Gallery</a></li>
+				<li><a href="#" class="footer-regular">Video Reports</a></li>
 			</ul>
 
-			<ul class="footer-links">
-			<li><a href="#" class="footer-header">About</a></li>
-			<li><a href="#" class="footer-regular">Contact</a></li>
-			<li><a href="#" class="footer-regular">Corrections</a></li>
-			<li><a href="#" class="footer-regular">History</a></li>
-			<li><a href="#" class="footer-regular">Join</a></li>
+			<ul>
+				<li><h3><a href="#" class="footer-header">About</a></h3></li>
+				<li><a href="#" class="footer-regular">Contact</a></li>
+				<li><a href="#" class="footer-regular">Corrections</a></li>
+				<li><a href="#" class="footer-regular">History</a></li>
+				<li><a href="#" class="footer-regular">Join</a></li>
 			</ul>
 		</div>
 	</div>
 
-	<img src="{{ 'assets/images/cavdailyfoot.png'|asset }}" class="right" alt="Bottom Banner"/>
-	<img src="{{ 'assets/images/gear.png'|asset }}" class="centered" alt="Detroit Softworks"/>
-
-	<p>All Content &copy; Copyright 2012, The Cavalier Daily</p>
+	<div class="text-center">
+		<a href="http://detroitsoftworks.com"><img src="{{ 'assets/images/gear.png'|asset }}" alt="Detroit Softworks"/></a>
+		<br />
+		<p>All Content &copy; Copyright {{ now|date('Y') }}, The Cavalier Daily</p>
+	</div>
 </footer>
 <!-- End of footer-->
 

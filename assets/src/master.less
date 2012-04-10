@@ -1,38 +1,14 @@
 @import "bootstrap/bootstrap.less";
 @import "bootstrap/responsive.less";
 
+@import "components/typography.less";
+
 @_darkblue: #091f5d;
+@_uvaorange: #cc3300;
 
 /* Utility Classes */
-.arial-stack {
-	font-family: Arial, sans-serif;
-}
-.georgia-stack {
-	font-family: "Georgia", "Times New Roman", Times, serif;
-}
 img.flex-image {
 	width: 100%;
-}
-.copy {
-	font-size: 13px;
-	line-height: 1.5em;
-}
-.small {
-	font-size: 12px;
-	line-height: 1.5em;
-}
-.large {
-	font-size: 16px;
-	line-height: 1.5em;
-}
-.text-right {
-	text-align: right;
-}
-.text-left {
-	text-align: left;
-}
-.text-center {
-	text-align: center;
 }
 
 hr.spacer {
@@ -64,26 +40,15 @@ hr.spacer {
 
 /* END Utility Classes */
 
-
+/* Standard Classes */
 body {
 	.georgia-stack;
 	font-size: 16px;
 	color: @grayDarker;
 }
 
-p {
-	.georgia-stack;
-	.copy;
-}
-
 nav {
 	.arial-stack;
-}
-
-
-.by-line {
-	.arial-stack;
-	font-size: 11px;
 }
 
 a {
@@ -93,10 +58,29 @@ a {
 		color: @linkColor;
 	}
 }
-
+/* END Standard Classes */
 
 @import "components/header.less";
 
+footer {
+	.well;
 
-@import "style_orig.less";
+	ul {
+		margin-bottom: 10px;
+
+		li {
+			padding-left: 10px;
+
+			&:first-child {
+				padding-left: 0;
+			}
+		}
+	}
+
+	p {
+		.small;
+	}
+}
+
+
 @import "content_orig.less";

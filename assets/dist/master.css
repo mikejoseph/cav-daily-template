@@ -6919,15 +6919,20 @@ a.thumbnail:hover {
     margin-left: 30px;
   }
 }
-/* Utility Classes */
 .arial-stack {
   font-family: Arial, sans-serif;
 }
 .georgia-stack {
   font-family: "Georgia", "Times New Roman", Times, serif;
 }
-img.flex-image {
-  width: 100%;
+p {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+.by-line {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
 }
 .copy {
   font-size: 13px;
@@ -6949,6 +6954,51 @@ img.flex-image {
 }
 .text-center {
   text-align: center;
+}
+h1 {
+  color: #222222;
+}
+h1 a {
+  color: #091f5d;
+  text-decoration: none;
+}
+h2 {
+  color: #222222;
+}
+h2 a {
+  color: #091f5d;
+  text-decoration: none;
+}
+h3 {
+  color: #cc3300;
+}
+h3 a {
+  color: #cc3300;
+}
+h3 a:hover {
+  color: #992600;
+}
+h4 {
+  color: #cc3300;
+}
+h4 a {
+  color: #cc3300;
+}
+h4 a:hover {
+  color: #992600;
+}
+h5 {
+  color: #cc3300;
+}
+h5 a {
+  color: #cc3300;
+}
+h5 a:hover {
+  color: #992600;
+}
+/* Utility Classes */
+img.flex-image {
+  width: 100%;
 }
 hr.spacer {
   height: 10px;
@@ -6975,22 +7025,14 @@ hr.spacer.half {
   padding: 2.5px 5px;
 }
 /* END Utility Classes */
+/* Standard Classes */
 body {
   font-family: "Georgia", "Times New Roman", Times, serif;
   font-size: 16px;
   color: #222222;
 }
-p {
-  font-family: "Georgia", "Times New Roman", Times, serif;
-  font-size: 13px;
-  line-height: 1.5em;
-}
 nav {
   font-family: Arial, sans-serif;
-}
-.by-line {
-  font-family: Arial, sans-serif;
-  font-size: 11px;
 }
 a {
   color: #00007a;
@@ -6998,6 +7040,7 @@ a {
 a:hover {
   color: #00007a;
 }
+/* END Standard Classes */
 header#main-header {
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -7152,75 +7195,42 @@ header#main-header #main-navigation ul li ul a {
   line-height: 1.5em;
   color: #222222;
 }
-/*Zubin's CSS end here*/
-div#footer {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 50px;
-  padding-top: 20px;
+footer {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #eee;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-img.divider {
-  margin: auto;
+footer blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
 }
-#columns-wrapper {
-  overflow: hidden;
-  width: 100%;
+footer ul {
+  margin-bottom: 10px;
 }
-ul.footer-links {
-  list-style: none;
-  text-decoration: none;
+footer ul li {
+  padding-left: 10px;
 }
-#column-1,
-#column-2,
-#column-3,
-#column-4 {
-  width: 240px;
-  float: left;
+footer ul li:first-child {
+  padding-left: 0;
 }
-a.footer-header {
-  color: #ff8207;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 15px;
-}
-a.footer-header:hover {
-  text-decoration: underline;
-}
-a.footer-regular {
-  text-decoration: none;
-  font-size: 13px;
-  color: #646464;
-}
-a.footer-regular:hover {
-  text-decoration: underline;
-}
-#footer-images {
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-#footer-images img.right {
-  display: block;
-  right: 0;
-  position: absolute;
-  width: 290px;
-  height: 50px;
-}
-#footer-images img.centered {
-  display: block;
-  margin: 0 auto;
-  height: 50px;
-  width: 50px;
-}
-#copyright {
-  float: right;
-}
-#copyright p {
-  padding-top: 0;
-  margin: 0;
-  font-size: 11px;
-  color: #646464;
-  text-align: center;
+footer p {
+  font-size: 12px;
+  line-height: 1.5em;
 }
 #container {
   margin: 0px auto;

@@ -19,11 +19,27 @@ hr.spacer {
 	background: transparent;
 	background: inherit;
 
+	&.hairline {
+		border-top: 1px solid @grayLighter;
+		height: 5px;
+		margin-top: 10px;
+	}
+
 	&.double {
 		height: 20px;
+
+		&.hairline {
+			height: 10px;
+			margin-top: 20px;
+		}
 	}
 	&.half {
 		height: 5px;
+
+		&.hairline {
+			height: 2px;
+			margin-top: 5px;
+		}
 	}
 }
 .box {
@@ -35,6 +51,30 @@ hr.spacer {
 	}
 	&.half {
 		padding: 2.5px 5px;
+	}
+}
+
+.item-list {
+	margin: 0;
+	padding: 10px 0;
+
+	li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		margin-bottom: 10px;
+
+		h4 {
+			line-height: 10px;
+			font-weight: normal;
+			a {
+				color: @_darkblue;
+			}
+			span {
+				font-size: 0.8em;
+			}
+		}
 	}
 }
 
@@ -79,5 +119,43 @@ footer {
 
 	p {
 		.small;
+	}
+}
+
+.abstract {
+	.by-line {
+		.arial-stack;
+		font-size: 11px;
+		margin-bottom: 5px;
+	}
+
+	&.three-column {
+		h2 {
+			font-size: 22px;
+		}
+
+		img {
+			float: left;
+			padding: 0 10px 5px 0;
+		}
+	}
+
+	&.five-column {
+		.box {
+			border-radius: 5px;
+
+			display: block;
+			background: @grayLighter;
+
+			aside {
+				.small;
+				.text-right;
+				display: block;
+				color: @grayDarker;
+			}
+		}
+		.flex-image {
+			border: 1px solid @grayLight;
+		}
 	}
 }

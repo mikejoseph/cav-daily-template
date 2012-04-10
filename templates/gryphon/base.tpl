@@ -56,9 +56,9 @@
 		<div class="row">
 			<nav class="span12">
 				<div id="main-navigation"><div class="row">
-					<div class="span8">
+					<div class="span9">
 						<ul>
-							<li><a href="#">Home</a></li>
+							<li><a href="#"><i class="icon-home icon-white"></i></a></li>
 							<li><a href="#">News</a></li>
 							<li class="selected"><a href="#">Sports</a>
 								<ul>
@@ -97,14 +97,19 @@
 									</li>
 							<li><a href="#">Comics</a></li>
 							<li><a href="#">Blogs</a></li>
-							<li><a href="#">Photos</a></li>
-							<li><a href="#">Multimedia</a></li>
+							<li><a href="#">Multimedia</a>
+								<ul>
+									<li><a href="#">Video</a></li>
+									<li><a href="#">Audio</a></li>
+									<li><a href="#">Photos</a></li>
+								</ul>
+							</li>
 						</ul>
 					</div> {# /.span10 #}
-					<div class="span4 text-right">
+					<div class="span3 text-right">
 						<form class="form-inline">
 							<div class="input-append">
-								<input type="text" placeholder="Search..." />
+								<input type="text" class="input-medium" placeholder="Search..." />
 								<a href="#" class="btn"><i class="icon-search"></i></a>
 							</div>
 						</form>
@@ -118,53 +123,64 @@
 
 	<div class="row">
 		<div class="span3">
-			<div id="recent">
-				<h3>RECENT NEWS:</h3>
-				<div id="rail">
-					<div class="headlines">
-						<h3 class="article"><a href="#">ARTICLE 1</a></h3>
-							<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
-							<span class="article"><a href="#">&#8230;more</a></span></p>
-							<span class="by-line">
-							 by WASHINGTON | minutes ago <a href="#">Comments</a>
-							</span>
-					</div>
-					<div class="headlines">
-						<h3 class="article"><a href="#">ARTICLE 2</a></h3>
-							<a href="#"><img src="images/darth-vader.jpg" alt="darth-vader" width="800" height="600" /></a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
-							<span class="article"><a href="#">&#8230;more</a></span></p>
-							<span class="by-line">
-							 by LINCOLN | 1 hour ago <a href="#">Comments</a>
-							</span>
-					</div>
-					<div class="headlines">
-						<h3 class="article"><a href="#"> ARTICLE 3</a></h3>
-							<a href="#"><img src="images/Yoda1.jpg" alt="Yoda1" width="1248" height="1200" /></a>
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
-							<span class="article"><a href="#">&#8230;more</a></span></p>
-							<span class="by-line">
-							 by HAMILTON | 2 hours ago <a href="#">Comments</a>
-							</span>
-					</div>
-					<div class="headlines">
-						<h3 class="article"><a href="#"> ARTICLE 4 </a></h3>
-							<p>ELorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
-							<span class="article"><a href="#">&#8230;more</a></span></p>
-							<span class="by-line">
-							 by GRANT | 4 hours ago	<a href="#">Comments</a>
-							</span>
-					</div>
-					<div class="headlines">
-						<h3 class="article"><a href="#"> ARTICLE 5 </a></h3>
-							<p>ELorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
-							<span class="article"><a href="#">&#8230;more</a></span></p>
-							<span class="by-line">
-							 by FRANKLIN | 4 hours ago	<a href="#">Comments</a>
-							</span>
-					</div>
-				</div>
-			</div>
+			<h3>Recent News:</h3>
+			<article class="three-column abstract">
+				<h2><a href="#">I am a headline</a></h2>
+				<aside class="by-line">
+				 by Testy Testerson | minutes ago | <a href="#"><i class="icon-comment"></i></a>
+				</aside>
+				<p>
+					<a href="#"><img src="http://placekitten.com/100" /></a>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+					<br />
+					<a href="#">read more <i class="icon-chevron-right"></i></a>
+				</p>
+			</article>
+
+			<hr class="spacer" />
+
+			<article class="three-column abstract">
+				<h2><a href="#">I am a headline</a></h2>
+				<aside class="by-line">
+				 by Testy Testerson | minutes ago | <a href="#"><i class="icon-comment"></i></a>
+				</aside>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+					<br />
+					<a href="#">read more <i class="icon-chevron-right"></i></a>
+				</p>
+			</article>
+
+			<hr class="spacer" />
+
+			<article class="three-column abstract">
+				<h2><a href="#">I am a headline</a></h2>
+				<aside class="by-line">
+				 by Testy Testerson | minutes ago | <a href="#"><i class="icon-comment"></i></a>
+				</aside>
+				<p>
+					<a href="#"><img src="http://placekitten.com/100" /></a>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+					<br />
+					<a href="#">read more <i class="icon-chevron-right"></i></a>
+				</p>
+			</article>
+
+			<hr class="spacer" />
+
+			<article class="three-column abstract">
+				<h2><a href="#">I am a headline</a></h2>
+				<aside class="by-line">
+				 by Testy Testerson | minutes ago | <a href="#"><i class="icon-comment"></i></a>
+				</aside>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+					<br />
+					<a href="#">read more <i class="icon-chevron-right"></i></a>
+				</p>
+			</article>
+
+
 			<div id="calendar">
 				<!--Calender-->
 				<h3>CALENDAR:</h3>
@@ -187,71 +203,121 @@
 			</div>
 		</div>
 		<div class="span5">
-			<a href="#"><img class="image" id="headline" src="images/49019_yjw_bkc_bigtentrophy_031112f.jpg"></a>
-			<div id="topstory">
-				<h1 class="article"><a href="#">FRONT PAGE HEADLINE</a></h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi interdum neque et justo ornare eget lobortis quam imperdiet.
-				<span class="article"><a href="#">&#8230;more</a></span></p>
-				<span class="by-line">by MOE | Jan. 20 <a href="#">Comments</a></span>
-			</div>
-			<div id="topstory">
-				<h2 class="article"><a href="#">HEADLINE 1</a></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi interdum neque et justo ornare eget lobortis quam imperdiet.
-				<span class="article"><a href="#">&#8230;more</a></span></p>
-				<span class="by-line">by LARRY | Jan. 20 <a href="#">Comments</a></span>
-			</div>
-			<div id="topstory">
-				<h2 class="article"><a href="#">HEADLINE 2</a></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi interdum neque et justo ornare eget lobortis quam imperdiet.
-				<span class="article"><a href="#">&#8230;more</a></span></p>
-				<span class="by-line">by CURLY | Jan. 20 <a href="#">Comments</a></span>
+			<article class="abstract five-column">
+				<div class="box">
+					<a href="#"><img src="http://placekitten.com/500" class="flex-image" /></a>
+					<aside>
+						<a href="http://placekitten.com">Photo Credit</a> - The Cavalier Daily
+					</aside>
+				</div>
+				<hr class="spacer" />
+				<h1><a href="#">People love kitties, film at 11</a></h1>
+				<aside class="by-line">
+				 by Testy Testerson | minutes ago | <a href="#"><i class="icon-comment"></i></a>
+				</aside>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+					<br />
+					<a href="#">read more <i class="icon-chevron-right"></i></a>
+				</p>
+			</article>
+
+			<hr class="hairline double spacer" />
+
+			<article class="abstract five-column">
+				<h2><a href="#">UVA was founded by Thomas Jefferson</a></h2>
+				<aside class="by-line">
+				 by Testy Testerson | minutes ago | <a href="#"><i class="icon-comment"></i></a>
+				</aside>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+					<br />
+					<a href="#">read more <i class="icon-chevron-right"></i></a>
+				</p>
+			</article>
+
+			<hr class="spacer" />
+
+			<article class="abstract five-column">
+				<h2><a href="#">That is very cool</a></h2>
+				<aside class="by-line">
+				 by Testy Testerson | minutes ago | <a href="#"><i class="icon-comment"></i></a>
+				</aside>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ipsum nec nisl mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+					<br />
+					<a href="#">read more <i class="icon-chevron-right"></i></a>
+				</p>
+			</article>
+
+			<hr class="hairline double spacer" />
+
+			<div class="row-fluid">
+				<div class="span6">
+					<h3><a href="#">Sports</a></h3>
+						<ul class="item-list">
+							<li><h4><a href="#">Cavs Crush Georgia Tech, 70-38</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Fan Code</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Team Travels North to Carolina</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Matmen Eye Duke, UNC</a><span> | Jan. 20</span></h4></li>
+						</ul>
+
+					<h3><a href="#">Opinion</a></h3>
+						<ul class="item-list">
+							<li><h4><a href="#">Citizen Power</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Rushing to Pledge</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">A Fairer Vote</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Shooting in the Dark</a><span> | Jan. 20</span></h4></li>
+						</ul>
+				</div>
+
+				<div class="span6">
+					<h3><a href="#">tableau</a></h3>
+						<ul class="item-list">
+							<li><h4><a href="#">A Spark of Pinterest</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Year of the 'Dragon'</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Bet on this 'War Horse'</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Who's House? 'Safe House'</a><span> | Jan. 20</span></h4></li>
+						</ul>
+
+					<h3><a href="#">Life</a></h3>
+						<ul class="item-list">
+							<li><h4><a href="#">A Hulaba Time</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Money Saving App</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Something to Complain About</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Dirty Little Secret</a><span> | Jan. 20</span></h4></li>
+						</ul>
+				</div>
 			</div>
 
-			<div class="sections">
-				<div id="TL">
-					<h2 class="page"><a href="#">Sports</a></h2>
-						<ul class="article">
-						<li><a href="#">Cavs Crush Georgia Tech, 70-38</a> | Jan. 20</li>
-						<li><a href="#">Fan Code</a> | Jan. 20</li>
-						<li><a href="#">Team Travels North to Carolina</a> | Jan. 20</li>
-						<li><a href="#">Matmen Eye Duke, UNC</a> | Jan. 20</li>
-						</ul>
-				</div>
-				<div id="TR">
-					<h2 class="page"><a href="#">Opinion</a></h2>
-						<ul class="article">
-						<li><a href="#">Citizen Power</a> | Jan. 20</li>
-						<li><a href="#">Rushing to Pledge</a> | Jan. 20</li>
-						<li><a href="#">A Fairer Vote</a> | Jan. 20</li>
-						<li><a href="#">Shooting in the Dark</a> | Jan. 19</li>
-						</ul>
-				</div>
-				<div id="bottomborder"></div>
-				<div id="BL">
-					<h2 class="page"><a href="#">tableau</a></h2>
-						<ul class="article">
-						<li><a href="#">A Spark of Pinterest</a> | Jan. 19</li>
-						<li><a href="#">Year of the 'Dragon'</a> | Jan. 19</li>
-						<li><a href="#">Bet on this 'War Horse'</a> | Jan. 19</li>
-						<li><a href="#">Who's House? 'Safe House'</a> | Feb. 10</li>
-						</ul>
-				</div>
-				<div id="BR">
-					<h2 class="page"><a href="#">Life</a></h2>
-						<ul class="article">
-						<li><a href="#">A Hulaba Time</a> | Jan. 18</li>
-						<li><a href="#">Money Saving App</a> | Jan. 18</li>
-						<li><a href="#">Something to Complain About</a> | Jan. 18</li>
-						<li><a href="#">Dirty Little Secret</a> | Jan. 18</li>
-						</ul>
-				</div>
-				<div id="bottomborder"></div>
-			</div>
+			<hr class="hairline double spacer" />
+
 	<!-- Features media sections-->
-			<div id="media">
-				<h2 class="page"><a href="3">Featured Multimedia:</a></h2>
-				<iframe width="560" height="315" src="http://www.youtube.com/embed/t3TmFyyB4zI" frameborder="0" allowfullscreen></iframe>
-			</div>
+			<h3><a href="#">Featured Multimedia:</a></h3>
+
+			<hr class="spacer" />
+
+			<ul class="thumbnails">
+				<li class="span5">
+					<a href="#" class="thumbnail"><img src="http://placekitten.com/500/250" class="flex-image" /></a>
+				</li>
+				<li class="span1">
+					<a href="#" class="thumbnail"><img src="http://placekitten.com/50" class="flex-image" /></a>
+				</li>
+				<li class="span1">
+					<a href="#" class="thumbnail"><img src="http://placekitten.com/50" class="flex-image" /></a>
+				</li>
+				<li class="span1">
+					<a href="#" class="thumbnail"><img src="http://placekitten.com/50" class="flex-image" /></a>
+				</li>
+				<li class="span1">
+					<a href="#" class="thumbnail"><img src="http://placekitten.com/50" class="flex-image" /></a>
+				</li>
+				<li class="span1">
+					<a href="#" class="thumbnail"><img src="http://placekitten.com/50" class="flex-image" /></a>
+				</li>
+			</ul>
+
 		</div>
 
 		<div class="span4">

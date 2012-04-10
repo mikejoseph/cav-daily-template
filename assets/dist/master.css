@@ -6930,10 +6930,6 @@ p {
   font-size: 13px;
   line-height: 1.5em;
 }
-.by-line {
-  font-family: Arial, sans-serif;
-  font-size: 11px;
-}
 .copy {
   font-size: 13px;
   line-height: 1.5em;
@@ -7008,11 +7004,24 @@ hr.spacer {
   background: transparent;
   background: inherit;
 }
+hr.spacer.hairline {
+  border-top: 1px solid #eeeeee;
+  height: 5px;
+  margin-top: 10px;
+}
 hr.spacer.double {
   height: 20px;
 }
+hr.spacer.double.hairline {
+  height: 10px;
+  margin-top: 20px;
+}
 hr.spacer.half {
   height: 5px;
+}
+hr.spacer.half.hairline {
+  height: 2px;
+  margin-top: 5px;
 }
 .box {
   padding: 5px 10px;
@@ -7023,6 +7032,26 @@ hr.spacer.half {
 }
 .box.half {
   padding: 2.5px 5px;
+}
+.item-list {
+  margin: 0;
+  padding: 10px 0;
+}
+.item-list li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.item-list li h4 {
+  line-height: 10px;
+  font-weight: normal;
+}
+.item-list li h4 a {
+  color: #091f5d;
+}
+.item-list li h4 span {
+  font-size: 0.8em;
 }
 /* END Utility Classes */
 /* Standard Classes */
@@ -7231,4 +7260,31 @@ footer ul li:first-child {
 footer p {
   font-size: 12px;
   line-height: 1.5em;
+}
+.abstract .by-line {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+.abstract.three-column h2 {
+  font-size: 22px;
+}
+.abstract.three-column img {
+  float: left;
+  padding: 0 10px 5px 0;
+}
+.abstract.five-column .box {
+  border-radius: 5px;
+  display: block;
+  background: #eeeeee;
+}
+.abstract.five-column .box aside {
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: right;
+  display: block;
+  color: #222222;
+}
+.abstract.five-column .flex-image {
+  border: 1px solid #999999;
 }

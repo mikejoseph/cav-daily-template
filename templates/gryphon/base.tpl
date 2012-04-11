@@ -21,11 +21,18 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ 'assets/dist/master.css'|asset }}" />
 
-	<script src="{{ 'assets/js/modernizr.min.js' }}"></script>
+	<script src="{{ 'assets/dist/modernizr.min.js' }}"></script>
 
 </head>
 <body class="container">
 <!--Header-->
+
+	<hr class="half spacer" />
+
+	{% include 'gryphon/main/ads/leaderboard.tpl' %}
+
+	<hr class="half spacer" />
+
 	<header id="main-header">
 
 		<div class="row">
@@ -48,8 +55,13 @@
 		</div> {# / .row #}
 
 		<div id="flag">
-			<div>
-				<a href="{{ '/'|url }}"><img src="{{ 'assets/images/flag.png'|asset }}" alt="Banner" id="main-flag" class="flex-image" /></a>
+			<div class="row">
+				<div class="span6">
+					<a href="{{ '/'|url }}"><img src="{{ 'assets/images/flag.png'|asset }}" alt="Banner" id="main-flag" class="flex-image" /></a>
+				</div>
+				<div class="span6"><div class="text-right">
+					{% include 'gryphon/main/ads/fullbanner.tpl' %}
+				</div></div>
 			</div>
 		</div>
 
@@ -127,7 +139,7 @@
 			<article class="three-column abstract">
 				<h2><a href="#">I am a headline</a></h2>
 				<aside class="by-line">
-				 by Testy Testerson | minutes ago | <a href="#"><i class="icon-comment"></i></a>
+				 by Testy Testerson | minutes ago | <a href="http://example.com"><i class="icon-comment"></i> </a>
 				</aside>
 				<p>
 					<a href="#"><img src="http://placekitten.com/100" /></a>
@@ -185,7 +197,7 @@
 				<!--Calender-->
 				<h3>CALENDAR:</h3>
 					<ul>
-						<li>Event 10</li>
+						<li><span class="label label-success">Sweet!</span> Event 10</li>
 						<li>Event 11</li>
 						<li>Event 12</li>
 						<li>Event 13</li>
@@ -297,39 +309,42 @@
 
 			<hr class="spacer" />
 
-			<ul class="thumbnails">
-				<li class="span5">
-					<a href="#" class="thumbnail"><img src="http://placekitten.com/500/250" class="flex-image" /></a>
-				</li>
-				<li class="span1">
-					<a href="#" class="thumbnail"><img src="http://placekitten.com/50" class="flex-image" /></a>
-				</li>
-				<li class="span1">
-					<a href="#" class="thumbnail"><img src="http://placekitten.com/50" class="flex-image" /></a>
-				</li>
-				<li class="span1">
-					<a href="#" class="thumbnail"><img src="http://placekitten.com/50" class="flex-image" /></a>
-				</li>
-				<li class="span1">
-					<a href="#" class="thumbnail"><img src="http://placekitten.com/50" class="flex-image" /></a>
-				</li>
-				<li class="span1">
-					<a href="#" class="thumbnail"><img src="http://placekitten.com/50" class="flex-image" /></a>
-				</li>
-			</ul>
+			<div id="main-carousel" class="carousel">
+				<div class="carousel-inner">
+					<div class="active item"><img src="http://placekitten.com/500/250" /></div>
+					<div class="item"><img src="http://placekitten.com/500/250" /></div>
+					<div class="item"><img src="http://placekitten.com/500/250" /></div>
+				</div>
+
+				<a class="carousel-control left" href="#main-carousel" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#main-carousel" data-slide="next">&rsaquo;</a>
+			</div>
 
 		</div>
 
 		<div class="span4">
-			<div id="activitybox">
-				POPULAR | COMMENTS | BLOGS
+			{% include 'gryphon/main/ads/rectangle.tpl' %}
+
+			<hr class="double harline" />
+
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#2" data-toggle="tab">Blogs</a></li>
+					<li><a href="#3" data-toggle="tab">Recent</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="2">
+						<p>Howdy, I'm in Section 2.</p>
+					</div>
+					<div class="tab-pane" id="3">
+						<p>Howdy, I'm in Section 3.</p>
+					</div>
+				</div>
 			</div>
-			<div id="twitterfeed">
-				tweets
-			</div>
-			<div id="printedition">
-				PRINT EDITION
-			</div>
+
+			<hr class="double spacer" />
+
+			{% include 'gryphon/main/modules/twitter_feed.tpl' %}
 
 		</div>
 	</div>
@@ -423,7 +438,8 @@
 <!-- End of footer-->
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="{{ 'assets/js/bootstrap.min.js'|asset }}"></script>
+<script type="text/javascript" src="{{ 'assets/dist/bootstrap.min.js'|asset }}"></script>
+<script type="text/javascript" src="{{ 'assets/dist/cavdaily.js'|asset }}"></script>
 {# include 'gryphon/main/tracker.tpl' #}
 </body>
 </html>

@@ -78,6 +78,10 @@ hr.spacer {
 	}
 }
 
+.label {
+	.arial-stack;
+}
+
 /* END Utility Classes */
 
 /* Standard Classes */
@@ -101,6 +105,8 @@ a {
 /* END Standard Classes */
 
 @import "components/header.less";
+@import "components/ads.less";
+@import "components/content.less";
 
 footer {
 	.well;
@@ -122,40 +128,6 @@ footer {
 	}
 }
 
-.abstract {
-	.by-line {
-		.arial-stack;
-		font-size: 11px;
-		margin-bottom: 5px;
-	}
-
-	&.three-column {
-		h2 {
-			font-size: 22px;
-		}
-
-		img {
-			float: left;
-			padding: 0 10px 5px 0;
-		}
-	}
-
-	&.five-column {
-		.box {
-			border-radius: 5px;
-
-			display: block;
-			background: @grayLighter;
-
-			aside {
-				.small;
-				.text-right;
-				display: block;
-				color: @grayDarker;
-			}
-		}
-		.flex-image {
-			border: 1px solid @grayLight;
-		}
-	}
+.pull5 {
+		#gradient > .vertical(#3e62a4, #1c3875);
 }

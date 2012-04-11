@@ -74,15 +74,15 @@
       "strictImports" : 0,
       "fileType" : 0
     },
-    "\/src\/bootstrap\/labels.less" : {
+    "\/src\/master.less" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/src\/bootstrap\/labels.less",
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/src\/master.less",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/src\/css\/labels.css",
+      "outputAbbreviatedPath" : "\/dist\/master.css",
       "strictImports" : 0,
       "fileType" : 0
     },
@@ -98,15 +98,15 @@
       "strictImports" : 0,
       "fileType" : 0
     },
-    "\/src\/master.less" : {
+    "\/src\/bootstrap\/labels.less" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/src\/master.less",
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/bootstrap\/labels.less",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/dist\/master.css",
+      "outputAbbreviatedPath" : "\/src\/css\/labels.css",
       "strictImports" : 0,
       "fileType" : 0
     },
@@ -181,15 +181,15 @@
       "initialSize" : 105042,
       "fileType" : 9
     },
-    "\/src\/bootstrap\/layouts.less" : {
+    "\/src\/bootstrap\/popovers.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/src\/bootstrap\/layouts.less",
+      "inputAbbreviatedPath" : "\/src\/bootstrap\/popovers.less",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/src\/css\/layouts.css",
+      "outputAbbreviatedPath" : "\/src\/css\/popovers.css",
       "strictImports" : 0,
       "fileType" : 0
     },
@@ -205,18 +205,6 @@
       "strictImports" : 0,
       "fileType" : 0
     },
-    "\/src\/bootstrap\/popovers.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/src\/bootstrap\/popovers.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/src\/css\/popovers.css",
-      "strictImports" : 0,
-      "fileType" : 0
-    },
     "\/images\/searchicon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -227,6 +215,18 @@
       "outputAbbreviatedPath" : "\/images\/searchicon.png",
       "initialSize" : 3191,
       "fileType" : 10
+    },
+    "\/src\/bootstrap\/layouts.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/bootstrap\/layouts.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/src\/css\/layouts.css",
+      "strictImports" : 0,
+      "fileType" : 0
     },
     "\/images\/300ad.png" : {
       "ignoreWasSetByUser" : 0,
@@ -330,6 +330,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/src\/css\/scaffolding.css",
+      "strictImports" : 0,
+      "fileType" : 0
+    },
+    "\/src\/components\/header.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/components\/header.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/src\/css\/header.css",
       "strictImports" : 0,
       "fileType" : 0
     },
@@ -437,6 +449,17 @@
       "initialSize" : 17012,
       "fileType" : 9
     },
+    "\/js\/master.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/js\/master.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/dist\/cavdaily.js",
+      "fileType" : 5
+    },
     "\/src\/bootstrap\/tooltip.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -461,9 +484,20 @@
       "strictImports" : 0,
       "fileType" : 0
     },
+    "\/js\/components\/base.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/components\/base.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/components\/base-ck.js",
+      "fileType" : 5
+    },
     "\/src\/bootstrap\/responsive.less" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/src\/bootstrap\/responsive.less",
@@ -554,6 +588,18 @@
       "strictImports" : 0,
       "fileType" : 0
     },
+    "\/src\/components\/typography.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/components\/typography.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/src\/css\/typography.css",
+      "strictImports" : 0,
+      "fileType" : 0
+    },
     "\/images\/rss.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -563,6 +609,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/rss.png",
       "initialSize" : 689,
+      "fileType" : 10
+    },
+    "\/images\/ad1.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/ad1.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/ad1.png",
+      "initialSize" : 20152,
       "fileType" : 10
     },
     "\/src\/bootstrap\/reset.less" : {
@@ -576,17 +633,6 @@
       "outputAbbreviatedPath" : "\/src\/css\/reset.css",
       "strictImports" : 0,
       "fileType" : 0
-    },
-    "\/images\/ad1.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/ad1.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/ad1.png",
-      "initialSize" : 20152,
-      "fileType" : 10
     },
     "\/images\/cavmap.png" : {
       "ignoreWasSetByUser" : 0,
@@ -608,6 +654,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/gear.png",
       "initialSize" : 1636,
+      "fileType" : 10
+    },
+    "\/images\/flag.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/flag.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/flag.png",
+      "initialSize" : 6352,
       "fileType" : 10
     },
     "\/src\/bootstrap\/navbar.less" : {
@@ -648,7 +705,13 @@
     }
   },
   "manualImportLinks" : [
-
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/js\/components\/base.js",
+      "baseFileAbbreviatedPath" : "\/js\/master.js",
+      "followForSyntaxChecking" : 1
+    }
   ],
   "projectSettings" : {
     "hamlNoEscapeInAttributes" : 0,

@@ -32,7 +32,7 @@
 			<div class="span12" id="top-ticker">
 				<div class="row">
 					<div class="span6"><div class="half box">
-						<time>February 15, 2012 | Rain 35 F | 7-Day Forecast | Charlotesville, VA</time>
+						<time>February 15, 2012 | Rain 35 F | 7-Day Forecast | Charlottesville, VA</time>
 					</div></div>
 					<div class="span6"><div class="half box text-right">
 						<ul>

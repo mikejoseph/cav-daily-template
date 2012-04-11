@@ -1,0 +1,55 @@
+.abstract {
+	.by-line {
+		.arial-stack;
+		font-size: 11px;
+		margin-bottom: 5px;
+
+		.icon-comment {
+			font-size: 13px;
+			color: @_uvaorange;
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	.icon-chevron-right {
+		font-size: 11px;
+		color: @_uvaorange;
+		position: relative;
+		left: 2px;
+	}
+
+	h1, h2, h3 {
+		line-height: 1.2em;
+	}
+
+	&.three-column {
+		h2 {
+			font-size: 22px;
+		}
+
+		img {
+			float: left;
+			padding: 0 10px 5px 0;
+		}
+	}
+
+	&.five-column {
+		.box {
+			border-radius: 5px;
+
+			display: block;
+			background: @grayLighter;
+
+			aside {
+				.small;
+				.text-right;
+				display: block;
+				color: @grayDarker;
+			}
+		}
+		.flex-image {
+			border: 1px solid @grayLight;
+		}
+	}
+}

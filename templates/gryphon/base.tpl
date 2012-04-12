@@ -70,9 +70,11 @@
 				<div id="main-navigation"><div class="row">
 					<div class="span9">
 						<ul>
-							<li><a href="#"><i class="icon-home icon-white"></i></a></li>
-							<li><a href="#">News</a></li>
-							<li class="selected"><a href="#">Sports</a>
+							<li class="selected"><a href="#"><i class="icon-home icon-white"></i></a>
+								<ul>
+									<li><span>Serving the University of Virginia community since 1890</span></li>
+								</ul>
+							</li><li><a href="#">News</a></li><li><a href="#">Sports</a>
 								<ul>
 									<li><a href="#">Cross Country</a></li>
 									<li><a href="#">Field Hockey</a></li>
@@ -82,34 +84,27 @@
 									<li><a href="#">Women's Basketball</a></li>
 									<li><a href="#">Women's Soccer</a></li>
 								</ul>
-							</li>
-							<li><a href="#">Opinion</a>
+							</li><li><a href="#">Opinion</a>
 								<ul>
 									<li><a href="#">Lead Editorial</a></li>
 									<li><a href="#">Letters to the Editor</a></li>
 								</ul>
-							</li>
-							<li><a href="#">Tableau</a>
+							</li><li><a href="#">Tableau</a>
 								<ul>
 									<li><a href="#">Tableau Articles</a></li>
 									<li><a href="#">Tableau's Blog</a></li>
 								</ul>
-							</li>
-							<li><a href="#">Life</a>
+							</li><li><a href="#">Life</a>
 								<ul>
 									<li><a href="#">Love Connection</a></li>
 									<li><a href="#">Love Connection Survey</a></li>
 								</ul>
-									</li>
-							<li><a href="#">Weeklies</a>
+							</li><li><a href="#">Weeklies</a>
 								<ul>
 									<li><a href="#">Focus</a></li>
 									<li><a href="#">Health &amp; Science</a></li>
 								</ul>
-									</li>
-							<li><a href="#">Comics</a></li>
-							<li><a href="#">Blogs</a></li>
-							<li><a href="#">Multimedia</a>
+							</li><li><a href="#">Comics</a></li><li><a href="#">Blogs</a></li><li><a href="#">Multimedia</a>
 								<ul>
 									<li><a href="#">Video</a></li>
 									<li><a href="#">Audio</a></li>

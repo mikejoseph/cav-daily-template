@@ -94,10 +94,9 @@ header#main-header{
 					}
 
 					ul {
-						display: block;
 						background: #fff;
 
-						a {
+						a, span {
 							color: @grayDarker;
 							font-weight: 700;
 
@@ -109,7 +108,7 @@ header#main-header{
 					}
 				}
 
-				a {
+				a, span {
 					color: darken(#fff, 10%);
 					font-size: 15px;
 					padding: 6px 10px;
@@ -120,11 +119,10 @@ header#main-header{
 					position: absolute;
 					bottom: -30px;
 					left: 0;
-					display: none;
-
+					.opacity(0);
 					width: 100%;
 
-					a {
+					a, span {
 						.small;
 						color: @grayDarker;
 					}

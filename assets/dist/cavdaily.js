@@ -1,3 +1,3 @@
 /*********************************************** 
      Begin base.js 
-***********************************************/$(document).ready(function(){$(".carousel").carousel({interval:5e3})});
+***********************************************/$(document).ready(function(){$(".carousel").carousel({interval:5e3});$("#main-navigation ul li ul").css({display:"none",opacity:1});var a=$("#main-navigation .selected");a.children("ul").css("display","block");$("#main-navigation > div > div > ul > li").mouseenter(function(a){var b=$(this);b.siblings().find("ul").css("display","none");b.children("ul").css("display","block")}).mouseleave(function(b){if(a.length>0){a.children("ul").css("display","block");a.siblings().find("ul").css("display","none")}})});

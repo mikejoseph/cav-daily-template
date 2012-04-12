@@ -7330,25 +7330,34 @@ header#main-header #main-navigation ul li:active a {
 header#main-header #main-navigation ul li.selected ul,
 header#main-header #main-navigation ul li:hover ul,
 header#main-header #main-navigation ul li:active ul {
-  display: block;
   background: #fff;
 }
 header#main-header #main-navigation ul li.selected ul a,
 header#main-header #main-navigation ul li:hover ul a,
-header#main-header #main-navigation ul li:active ul a {
+header#main-header #main-navigation ul li:active ul a,
+header#main-header #main-navigation ul li.selected ul span,
+header#main-header #main-navigation ul li:hover ul span,
+header#main-header #main-navigation ul li:active ul span {
   color: #222222;
   font-weight: 700;
 }
 header#main-header #main-navigation ul li.selected ul a:hover,
 header#main-header #main-navigation ul li:hover ul a:hover,
 header#main-header #main-navigation ul li:active ul a:hover,
+header#main-header #main-navigation ul li.selected ul span:hover,
+header#main-header #main-navigation ul li:hover ul span:hover,
+header#main-header #main-navigation ul li:active ul span:hover,
 header#main-header #main-navigation ul li.selected ul a:active,
 header#main-header #main-navigation ul li:hover ul a:active,
-header#main-header #main-navigation ul li:active ul a:active {
+header#main-header #main-navigation ul li:active ul a:active,
+header#main-header #main-navigation ul li.selected ul span:active,
+header#main-header #main-navigation ul li:hover ul span:active,
+header#main-header #main-navigation ul li:active ul span:active {
   color: #091f5d;
   background: #fff;
 }
-header#main-header #main-navigation ul li a {
+header#main-header #main-navigation ul li a,
+header#main-header #main-navigation ul li span {
   color: #e6e6e6;
   font-size: 15px;
   padding: 6px 10px;
@@ -7358,10 +7367,14 @@ header#main-header #main-navigation ul li ul {
   position: absolute;
   bottom: -30px;
   left: 0;
-  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  filter: alpha(opacity=0);
   width: 100%;
 }
-header#main-header #main-navigation ul li ul a {
+header#main-header #main-navigation ul li ul a,
+header#main-header #main-navigation ul li ul span {
   font-size: 12px;
   line-height: 1.5em;
   color: #222222;

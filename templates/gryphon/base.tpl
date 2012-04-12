@@ -426,7 +426,7 @@
 
 <footer>
 	<div class="row-fluid">
-		<div class="span3">
+		<div class="span2">
 			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">News</a></h3></li>
 				<li><a href="#" class="footer-regular">Focus</a></li>
@@ -445,7 +445,7 @@
 			</ul>
 		</div>
 
-		<div class="span3">
+		<div class="span2">
 			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">Opinion</a></h3></li>
 				<li><a href="#" class="footer-regular">Cartoons</a></li>
@@ -466,7 +466,7 @@
 			</ul>
 		</div>
 
-		<div class="span3">
+		<div class="span2">
 			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">Sports</a></h3></li>
 				<li><a href="#" class="footer-regular">Cross Country</a></li>
@@ -483,7 +483,7 @@
 			</ul>
 		</div>
 
-		<div class="span3">
+		<div class="span2">
 			<ul class="unstyled">
 				<li><h3><a href="#" class="footer-header">Multimedia</a></h3></li>
 				<li><a href="#" class="footer-regular">Audio</a></li>
@@ -499,12 +499,27 @@
 				<li><a href="#" class="footer-regular">Join</a></li>
 			</ul>
 		</div>
+
+		<div class="span2">
+			<p>
+				The Cavalier Daily is the independent student newspaper of the University of Virgina, published since 1890.
+			</p>
+			<p>
+				Please see our <a href="#">about page</a> for more information.
+			</p>
+		</div>
+
+		<div class="span2"><div class="text-center">
+			<a href="#"><img src="http://placehold.it/120x200" class="flex-image" /></a>
+			<br />
+			<span class="small"><a href="#">Download PDF</a></span>
+		</div></div>
 	</div>
 
 	<div class="text-center">
-		<a href="http://detroitsoftworks.com"><img src="{{ 'assets/images/gear.png'|asset }}" alt="Detroit Softworks"/></a>
-		<br />
 		<p>All Content &copy; Copyright {{ now|date('Y') }}, The Cavalier Daily</p>
+		<hr class="spacer" />
+		<a href="http://detroitsoftworks.com"><img src="{{ 'assets/images/gear.png'|asset }}" alt="Detroit Softworks"/></a>
 	</div>
 </footer>
 <!-- End of footer-->

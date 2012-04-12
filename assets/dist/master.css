@@ -7133,6 +7133,7 @@ h5 a:hover {
 /* Utility Classes */
 img.flex-image {
   width: 100%;
+  max-width: 100%;
 }
 hr.spacer {
   height: 10px;
@@ -7420,10 +7421,25 @@ header#main-header #main-navigation ul li ul a {
   float: left;
   padding: 0 10px 5px 0;
 }
+.abstract.five-column {
+  /*		.box {
+			border-radius: 5px;
+
+			display: block;
+			background: @grayLighter;
+
+			aside {
+				.small;
+				.text-right;
+				display: block;
+				color: @grayDarker;
+			}
+		}
+*/
+
+}
 .abstract.five-column .box {
-  border-radius: 5px;
   display: block;
-  background: #eeeeee;
 }
 .abstract.five-column .box aside {
   font-size: 12px;
@@ -7433,7 +7449,7 @@ header#main-header #main-navigation ul li ul a {
   color: #222222;
 }
 .abstract.five-column .flex-image {
-  border: 1px solid #999999;
+  border: 1px solid #000000;
 }
 h4 .label {
   position: relative;

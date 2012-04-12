@@ -108,6 +108,63 @@ a {
 @import "components/ads.less";
 @import "components/content.less";
 
+#social-buttons {
+	.arial-stack;
+
+	width: 240px;
+	margin: auto;
+
+	i {
+		font-size: 20px;
+		position: relative;
+		top: 3px;
+
+		color: @_uvaorange;
+
+		margin-right: 3px;
+	}
+}
+
+.nav-tabs {
+	.arial-stack;
+	#gradient > .vertical(#3e62a4, #1c3875);
+	.border-radius(3px 3px 0 0);
+	margin-bottom: 0;
+
+	li:hover, li.active {
+		.border-radius(3px 3px 0 0);
+		background: @_darkblue;
+		margin-top: -3px;
+		padding-bottom: 2px;
+		margin-bottom: 0px;
+
+		a {
+			background: inherit;
+			border: 0;
+			color: #fff;
+			padding-bottom: 4px;
+		}
+
+	}
+	li, li:hover {
+		a, a:hover {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			color: darken(#fff, 10%);
+			background: inherit;
+			border: 0;
+
+		}
+
+	}
+}
+.tab-content {
+	.well {
+		.border-radius(0 0 3px 3px);
+		margin-top: -1px;
+	}
+}
+
 footer {
 	.well;
 

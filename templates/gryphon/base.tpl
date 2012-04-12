@@ -192,27 +192,68 @@
 				</p>
 			</article>
 
+			<hr class="double spacer" />
 
-			<div id="calendar">
-				<!--Calender-->
-				<h3>CALENDAR:</h3>
-					<ul>
-						<li><span class="label label-success">Sweet!</span> Event 10</li>
-						<li>Event 11</li>
-						<li>Event 12</li>
-						<li>Event 13</li>
-						<li>Event 14</li>
-						<li>Event 15</li>
-					</ul>
+			<h3>Calendar:</h3>
+			<hr class="spacer" />
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#day1" data-toggle="tab">Today</a></li>
+					<li><a href="#day2" data-toggle="tab">Tomorrow</a></li>
+					<li><a href="#day3" data-toggle="tab">Fri</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="day1"><div class="well">
+						<ul class="unstyled">
+							<li>
+								<h4><span class="label label-success">ART</span> <a href="#">A description</a></h4>
+								<p>Lorem ipsum and stuff. Lorem ipsum and stuff</p>
+							</li>
+							<li>
+								<h4><span class="label label-info">MUSIC</span> <a href="#">A description</a></h4>
+								<p>Lorem ipsum and stuff. Lorem ipsum and stuff</p>
+							</li>
+							<li>
+								<h4><span class="label label-inverse">BOOKS</span> <a href="#">A description</a></h4>
+								<p>Lorem ipsum and stuff. Lorem ipsum and stuff</p>
+							</li>
+						</ul>
+					</div></div>
+					<div class="tab-pane" id="day2"><div class="well">
+						<ul class="unstyled">
+							<li>
+								<h4><span class="label label-success">ART</span> <a href="#">A description</a></h4>
+								<p>Lorem ipsum and stuff. Lorem ipsum and stuff</p>
+							</li>
+							<li>
+								<h4><span class="label label-info">MUSIC</span> <a href="#">A description</a></h4>
+								<p>Lorem ipsum and stuff. Lorem ipsum and stuff</p>
+							</li>
+							<li>
+								<h4><span class="label label-inverse">BOOKS</span> <a href="#">A description</a></h4>
+								<p>Lorem ipsum and stuff. Lorem ipsum and stuff</p>
+							</li>
+						</ul>
+					</div></div>
+					<div class="tab-pane" id="day3"><div class="well">
+						<ul class="unstyled">
+							<li>
+								<h4><span class="label label-success">ART</span> <a href="#">A description</a></h4>
+								<p>Lorem ipsum and stuff. Lorem ipsum and stuff</p>
+							</li>
+							<li>
+								<h4><span class="label label-info">MUSIC</span> <a href="#">A description</a></h4>
+								<p>Lorem ipsum and stuff. Lorem ipsum and stuff</p>
+							</li>
+							<li>
+								<h4><span class="label label-inverse">BOOKS</span> <a href="#">A description</a></h4>
+								<p>Lorem ipsum and stuff. Lorem ipsum and stuff</p>
+							</li>
+						</ul>
+					</div></div>
+				</div>
 			</div>
-			<!--Social media-->
-			<div id="follow">
-				<h3 id="recent">FOLLOW:</h3>
-					<a href="#"><img src="icons/twitter.png" alt="twitter" width="32" height="32" /></a>
-					<a href="#"><img src="icons/facebook.png" alt="facebook" width="32" height="32" /></a>
-					<a href="#"><img src="icons/rss.png" alt="rss" width="32" height="32" /></a>
-					<a href="#"><img src="icons/rss.png" alt="rss" width="32" height="32" /></a>
-			</div>
+
 		</div>
 		<div class="span5">
 			<article class="abstract five-column">
@@ -323,6 +364,15 @@
 		</div>
 
 		<div class="span4">
+
+			<div class="btn-group" id="social-buttons">
+				<a href="#" class="btn"><i class="icon-twitter-sign"></i> Follow</a>
+				<a href="#" class="btn"><i class="icon-facebook-sign"></i> Friend</a>
+				<a href="#" class="btn"><i class="icon-heart"></i> Feed</a>
+			</div>
+
+			<hr class="double hairline" />
+
 			{% include 'gryphon/main/ads/rectangle.tpl' %}
 
 			<hr class="double harline" />
@@ -333,12 +383,34 @@
 					<li><a href="#3" data-toggle="tab">Recent</a></li>
 				</ul>
 				<div class="tab-content">
-					<div class="tab-pane active" id="2">
-						<p>Howdy, I'm in Section 2.</p>
-					</div>
-					<div class="tab-pane" id="3">
-						<p>Howdy, I'm in Section 3.</p>
-					</div>
+					<div class="tab-pane active" id="2"><div class="well">
+						<ul>
+							<li><a href="#">Post the first</a></li>
+							<li><a href="#">Post the second</a></li>
+							<li><a href="#">Post the third</a></li>
+							<li><a href="#">Post the fourth</a></li>
+							<li><a href="#">Post the fifth</a></li>
+							<li><a href="#">Post the sixth</a></li>
+							<li><a href="#">Post the seventh</a></li>
+							<li><a href="#">Post the eighth</a></li>
+							<li><a href="#">Post the ninth</a></li>
+							<li><a href="#">Post the tenth</a></li>
+						</ul>
+					</div></div>
+					<div class="tab-pane" id="3"><div class="well">
+						<ul>
+							<li><a href="#">Article the first</a></li>
+							<li><a href="#">Article the second</a></li>
+							<li><a href="#">Article the third</a></li>
+							<li><a href="#">Article the fourth</a></li>
+							<li><a href="#">Article the fifth</a></li>
+							<li><a href="#">Article the sixth</a></li>
+							<li><a href="#">Article the seventh</a></li>
+							<li><a href="#">Article the eighth</a></li>
+							<li><a href="#">Article the ninth</a></li>
+							<li><a href="#">Article the tenth</a></li>
+						</ul>
+					</div></div>
 				</div>
 			</div>
 

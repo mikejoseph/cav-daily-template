@@ -7132,8 +7132,12 @@ h5 a:hover {
 }
 /* Utility Classes */
 img.flex-image {
-  width: 100%;
   max-width: 100%;
+}
+img.flex-image.block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 hr.spacer {
   height: 10px;
@@ -7340,6 +7344,7 @@ header#main-header #main-navigation ul li:hover ul span,
 header#main-header #main-navigation ul li:active ul span {
   color: #222222;
   font-weight: 700;
+  padding: 6px 5px;
 }
 header#main-header #main-navigation ul li.selected ul a:hover,
 header#main-header #main-navigation ul li:hover ul a:hover,
@@ -7463,6 +7468,10 @@ header#main-header #main-navigation ul li ul span {
 }
 .abstract.five-column .flex-image {
   border: 1px solid #000000;
+}
+.abstract.five-column p img {
+  float: left;
+  padding: 0 10px 5px 0;
 }
 h4 .label {
   position: relative;

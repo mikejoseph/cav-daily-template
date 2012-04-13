@@ -1,38 +1,60 @@
-{% macro sidebar(article) %}
-	{% import "macros/meta.tpl" as metaRender %}
-	<a href="{{ article.url }}" class="head3">{{ article.headline }}</a>
-	
-	{% if article.authors.length %}
-		<div class="dateline sm">By {{ article.authors.splat('name')|join(', ')|upper }}</div>
-	{% endif %}
-	
-	<div class="abstract mb">{{ article.abstract_formatted }} {{ metaRender.dateLine(article.modified) }}</div>
-{% endmacro %}
-
 {% macro dom(article) %}
-	{% import "macros/meta.tpl" as metaRender %}
-	{% set topImage = article.media.grab('type', 'image')[0] %}
-	
-	{% if topImage %}
-	<div class="image mmb">
-		<a href="{{ article.url }}"><img src="{{ topImage.url }}"  alt="{{ article.headline }}" /></a>
-	</div>
-	{% endif %}
-	
-	<h3><a href="{{ article.url }}">{{ article.headline }}</a></h3>
-	
-	{% if article.authors.length %}
-		<div class="dateline sm">By {{ article.authors.splat('name')|join(', ')|upper }}</div>
-	{% endif %}
-	
-	<div class="abstract mb">
-		{{ article.abstract_formatted }}
-		{{ metaRender.dateLine(article.modified) }}
-	</div>
+	<article class="abstract five-column">
+		{% set images = article.media.grab('type', 'image', true) %}
+		{% if images.length %}
+		<div class="box">
+			<a href="{{ article.url }}"><img src="{{ images[0].url }}" class="block flex-image" /></a>
+			<aside>
+				{{ images[0].authors.splat('name')|join(' and') }} - {{ images[0].source }}
+			</aside>
+		</div>
+		<hr class="spacer" />
+		{% endif %}
+		<h1><a href="{{ article.url }}">{{ article.headline }}</a></h1>
+		<aside class="by-line">
+		 by {{ article.authors.splat('name')|join(' and ') }} | {{ article.created|timeSince }} | <a href="{{ article.url }}"><i class="icon-comment"></i></a>
+		</aside>
+		<p>
+			{{ article.abstract|strip }}
+			<br />
+			<a href="{{ article.url }}">read more <i class="icon-chevron-right"></i></a>
+		</p>
+	</article>
 {% endmacro %}
 
-{% macro list(article) %}
-	{% import "macros/meta.tpl" as metaRender %}
-	
-	<li><h4><a href="{{ article.url }}">{{ article.headline }}</a></h4> {{ metaRender.dateLine(article.modified) }}</li>
+{% macro threeCol(article) %}
+	<article class="three-column abstract">
+		<h2><a href="{{ article.url }}">{{ article.headline }}</a></h2>
+		<aside class="by-line">
+		 by {{ article.authors.splat('name')|join(' and ') }} | {{ article.created|timeSince }} | <a href="{{ article.url }}"><i class="icon-comment"></i> </a>
+		</aside>
+		<p>
+			{% if article.media[0].type == 'image' %}
+				<a href="{{ article.url }}"><img src="{{ article.media[0].urlThumbnail }}" style="max-width:100px" /></a>
+			{% endif %}
+			{{ article.abstract|strip }}
+			<br />
+			<a href="{{ article.url }}">read more <i class="icon-chevron-right"></i></a>
+		</p>
+	</article>
+
 {% endmacro %}
+
+{% macro fiveCol(article) %}
+	<article class="abstract five-column">
+		<h2><a href="{{ article.url }}">{{ article.headline }}</a></h2>
+		<aside class="by-line">
+		 by {{ article.authors.splat('name')|join(' and ') }} | {{ article.created|timeSince }} | <a href="{{ article.url }}"><i class="icon-comment"></i></a>
+		</aside>
+		<p>
+			{% if article.media[0].type == 'image' %}
+				<a href="{{ article.url }}"><img src="{{ article.media[0].urlThumbnail }}" style="max-width:100px" /></a>
+			{% endif %}
+			{{ article.abstract|strip }}
+			<br />
+			<a href="{{ article.url }}">read more <i class="icon-chevron-right"></i></a>
+		</p>
+	</article>
+
+{% endmacro %}
+

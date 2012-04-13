@@ -1,92 +1,105 @@
 {% extends "gryphon/base.tpl" %}
-{% block title %} :: {{ config.get('dsw:siteslogan') }}{% endblock %}
 {% block activeNav %}home{% endblock %}
 
 {% block content %}
 
 {% set topStory = articles.shift() %}
-{% set sidebarStories = articles.shift(2) %}
-{% set centerStories = articles.shift(3) %}
+{% set centerStories = articles.shift(2) %}
 {% import "macros/article.tpl" as articleRender %}
 
-<div class="grid_8">
+	<div class="row">
+		<div class="span3">
+			<h3>Recent News:</h3>
 
-	<div class="grid_2 alpha">
-		{% for article in sidebarStories %}
-			{{ articleRender.sidebar(article) }}
-		{% endfor %}
-	</div>
-	
-	<div class="grid_6 omega">
-		{{ articleRender.dom(topStory) }}
-		
-		<ul class="hat">
-			{% for article in centerStories %}
-				{{ articleRender.list(article) }}
+			{% for article in articles %}
+				{{ articleRender.threeCol(article) }}
+				<hr class="spacer" />
 			{% endfor %}
-		</ul>
+
+			<hr class="spacer" />
+
+			{% include 'gryphon/main/modules/calendar.tpl' %}
+
+		</div>
+		<div class="span5">
+
+			{{ articleRender.dom(topStory) }}
+
+			<hr class="hairline double spacer" />
+
+			{% for article in centerStories %}
+				{{ articleRender.fiveCol(article) }}
+				<hr class="spacer" />
+			{% endfor %}
+
+			<hr class="hairline spacer" />
+
+			<div class="row-fluid">
+				<div class="span6">
+					<h3><a href="#">Sports</a></h3>
+						<ul class="item-list">
+							<li><h4><a href="#">Cavs Crush Georgia Tech, 70-38</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Fan Code</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Team Travels North to Carolina</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Matmen Eye Duke, UNC</a><span> | Jan. 20</span></h4></li>
+						</ul>
+
+					<h3><a href="#">Opinion</a></h3>
+						<ul class="item-list">
+							<li><h4><a href="#">Citizen Power</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Rushing to Pledge</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">A Fairer Vote</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Shooting in the Dark</a><span> | Jan. 20</span></h4></li>
+						</ul>
+				</div>
+
+				<div class="span6">
+					<h3><a href="#">tableau</a></h3>
+						<ul class="item-list">
+							<li><h4><a href="#">A Spark of Pinterest</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Year of the 'Dragon'</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Bet on this 'War Horse'</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Who's House? 'Safe House'</a><span> | Jan. 20</span></h4></li>
+						</ul>
+
+					<h3><a href="#">Life</a></h3>
+						<ul class="item-list">
+							<li><h4><a href="#">A Hulaba Time</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Money Saving App</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Something to Complain About</a><span> | Jan. 20</span></h4></li>
+							<li><h4><a href="#">Dirty Little Secret</a><span> | Jan. 20</span></h4></li>
+						</ul>
+				</div>
+			</div>
+
+			<hr class="hairline double spacer" />
+
+			{% include 'gryphon/main/modules/featured-mm.tpl' %}
+
+		</div>
+
+		<div class="span4">
+
+			<div class="btn-group" id="social-buttons">
+				<a href="#" class="btn"><i class="icon-twitter-sign"></i> Follow</a>
+				<a href="#" class="btn"><i class="icon-facebook-sign"></i> Friend</a>
+				<a href="#" class="btn"><i class="icon-heart"></i> Feed</a>
+			</div>
+
+			<hr class="double hairline" />
+
+			{% include 'gryphon/main/ads/rectangle.tpl' %}
+
+			<hr class="double harline" />
+
+			{% include 'gryphon/main/modules/recent.tpl' %}
+
+			<hr class="double spacer" />
+
+			{% include 'gryphon/main/modules/twitter_feed.tpl' %}
+
+		</div>
 	</div>
-	
-</div>
-
-<div class="grid_4">
-
-	{% include 'gryphon/main/modules/calendar.tpl' %}
-	{% include 'gryphon/ads/rectangle_300x250.tpl' %}
 
 
-</div>
-
-<div class="clear mb"> </div>
-
-{% include 'gryphon/ads/leaderboard_728x90.tpl' %}
-
-<div class="clear mb"> </div>
-
-
-<div class="grid_4">
-	{% include 'gryphon/main/modules/sectionbox.tpl' with ['sec': 'sports', 'limit': 3] %}
-
-	{% include 'gryphon/main/modules/sectionbox.tpl' with ['sec': 'news', 'limit': 3] %}
-
-	{% include 'gryphon/main/modules/sectionbox.tpl' with ['sec': 'ae', 'limit': 3] %}
-
-	{% include 'gryphon/main/modules/sectionbox.tpl' with ['sec': 'opinion', 'limit': 3] %}
-
-</div>
-
-<div class="grid_4">
- 	{% include 'gryphon/main/modules/fb_fan.tpl' %}
-	{% include 'gryphon/main/modules/recent.tpl' %}
-
-</div>
-
-<div class="grid_4">
-    
-	{% include 'gryphon/main/modules/twitter_feed.tpl' %}
-	{% include 'gryphon/ads/rectangle_300x250.tpl' %}
-
-</div>
-
-<div class="clear mb"> </div>
-
-<div class="grid_6">
-	{% include 'gryphon/main/modules/mm_viewer.tpl' %}
-	
-	{% include 'tsn/poll/recent.tpl' %}
-</div>
-
-<div class="grid_4">
-	{% include 'gryphon/main/modules/galleries_home.tpl' %}	
-</div>
-	
-<div class="grid_2">
-	{% include 'gryphon/main/modules/follow.tpl' %}
-
-	{#% include 'gryphon/main/modules/print_edition.tpl' %#}
-	
-	{% include 'gryphon/main/modules/print_edition_magazine.tpl' %}
-</div>
-
-<div class="clear mb"> </div>
 {% endblock content %}

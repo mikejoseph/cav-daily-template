@@ -1,19 +1,17 @@
-{% include 'gryphon/main/modules/calendar.tpl' %}
+<div class="btn-group" id="social-buttons">
+	<a href="#" class="btn"><i class="icon-twitter-sign"></i> Follow</a>
+	<a href="#" class="btn"><i class="icon-facebook-sign"></i> Friend</a>
+	<a href="#" class="btn"><i class="icon-heart"></i> Feed</a>
+</div>
+
+<hr class="double hairline" />
+
+{% include 'gryphon/main/ads/rectangle.tpl' %}
+
+<hr class="double harline" />
 
 {% include 'gryphon/main/modules/recent.tpl' %}
-{% include 'gryphon/ads/rectangle_300x250.tpl' %}
 
-<div class="grid_2 alpha">
-	{% include 'gryphon/main/modules/follow.tpl' %}
-</div>
-	
-<div class="grid_2 omega">
-	{% include 'gryphon/main/modules/print_edition.tpl' %}
+<hr class="double spacer" />
 
-	{% include 'gryphon/ads/button_120x60.tpl' %}
-</div>
-<div class="clear"> </div>
-
-{% include 'gryphon/main/modules/fb_fan.tpl' %}
 {% include 'gryphon/main/modules/twitter_feed.tpl' %}
-

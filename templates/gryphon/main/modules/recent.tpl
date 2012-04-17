@@ -5,31 +5,27 @@
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane active" id="2"><div class="well">
+						{% fetch posts from blogPost with [
+							'where': 'status = 1',
+							'order': 'created desc',
+							'limit': 10
+						]%}
 						<ul>
-							<li><a href="#">Post the first</a></li>
-							<li><a href="#">Post the second</a></li>
-							<li><a href="#">Post the third</a></li>
-							<li><a href="#">Post the fourth</a></li>
-							<li><a href="#">Post the fifth</a></li>
-							<li><a href="#">Post the sixth</a></li>
-							<li><a href="#">Post the seventh</a></li>
-							<li><a href="#">Post the eighth</a></li>
-							<li><a href="#">Post the ninth</a></li>
-							<li><a href="#">Post the tenth</a></li>
+							{% for post in posts %}
+								<li><a href="{{ post.url }}">{{ post.headline }}</a></li>
+							{% endfor %}
 						</ul>
 					</div></div>
 					<div class="tab-pane" id="3"><div class="well">
+						{% fetch articles from article with [
+							'where': 'status = 1',
+							'order': 'weight desc, created desc',
+							'limit': 10
+						]%}
 						<ul>
-							<li><a href="#">Article the first</a></li>
-							<li><a href="#">Article the second</a></li>
-							<li><a href="#">Article the third</a></li>
-							<li><a href="#">Article the fourth</a></li>
-							<li><a href="#">Article the fifth</a></li>
-							<li><a href="#">Article the sixth</a></li>
-							<li><a href="#">Article the seventh</a></li>
-							<li><a href="#">Article the eighth</a></li>
-							<li><a href="#">Article the ninth</a></li>
-							<li><a href="#">Article the tenth</a></li>
+							{% for article in articles %}
+								<li><a href="{{ article.url }}">{{ article.headline }}</a></li>
+							{% endfor %}
 						</ul>
 					</div></div>
 				</div>

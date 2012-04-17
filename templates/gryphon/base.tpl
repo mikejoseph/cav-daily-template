@@ -21,7 +21,7 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ 'assets/dist/master.css'|asset }}" />
 
-	<script src="{{ 'assets/dist/modernizr.min.js' }}"></script>
+	<script src="{{ 'assets/dist/modernizr.min.js'|asset }}"></script>
 
 </head>
 <body class="container">

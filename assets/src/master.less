@@ -72,7 +72,7 @@ hr.spacer {
 		margin-bottom: 10px;
 
 		h4 {
-			line-height: 10px;
+			line-height: 1.1em;
 			font-weight: normal;
 			a {
 				color: @_darkblue;
@@ -113,6 +113,7 @@ a {
 @import "components/header.less";
 @import "components/ads.less";
 @import "components/content.less";
+@import "jquery.fancybox.less";
 
 #social-buttons {
 	.arial-stack;
@@ -169,6 +170,10 @@ a {
 		.border-radius(0 0 3px 3px);
 		margin-top: -1px;
 	}
+
+	ul li {
+		margin-bottom: 10px;
+	}
 }
 
 footer {
@@ -193,4 +198,8 @@ footer {
 
 .pull5 {
 		#gradient > .vertical(#3e62a4, #1c3875);
+}
+
+.carousel {
+
 }

@@ -57,7 +57,7 @@
 	<div id="flag">
 		<div class="row">
 			<div class="span6">
-				<a href="{{ '/'|url }}"><img src="{{ 'assets/images/flag.png'|asset }}" alt="Banner" id="main-flag" class="flex-image" /></a>
+				<a href="{{ '/'|url }}"><img src="{{ 'assets/images/CDBanner.png'|asset }}" alt="Banner" id="main-flag" class="flex-image" /></a>
 			</div>
 			<div class="span6"><div class="text-right">
 				{% include 'gryphon/main/ads/fullbanner.tpl' %}
@@ -99,12 +99,12 @@
 								<li><a href="#">Lead Editorials</a></li>
 								<li><a href="#">Letters to the Editor</a></li>
 							</ul>
-						</li><li{% if active == 'tableau' %} class="selected"{% endif %}><a href="#">Tableau</a>
+						</li><li{% if active == 'aande' %} class="selected"{% endif %}><a href="#">A&amp;E</a>
 							<ul>
 								<li><a href="#">Art</a></li>
 								<li><a href="#">Movies</a></li>
 								<li><a href="#">Music</a></li>
-								<li><a href="#">Tableau's Blog</a></li>
+								<li><a href="#">Arts &amp; Entertainment Blog</a></li>
 							</ul>
 						</li><li{% if active == 'life' %} class="selected"{% endif %}><a href="#">Life</a>
 							<ul>
@@ -179,11 +179,11 @@
 			</ul>
 
 			<ul class="unstyled">
-				<li><h3><a href="#">Tableau</a></h3></li>
+				<li><h3><a href="#">A&amp;E</a></h3></li>
 				<li><a href="#">Art</a></li>
 				<li><a href="#">Movies</a></li>
 				<li><a href="#">Music</a></li>
-				<li><a href="#">Tableau's Blog</a></li>
+				<li><a href="#">Arts &amp; Entertainment Blog</a></li>
 			</ul>
 		</div>
 

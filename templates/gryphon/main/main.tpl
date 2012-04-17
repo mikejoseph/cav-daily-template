@@ -52,15 +52,15 @@
 							</ul>
 						</div>
 						<div class="span6">
-							<h3><a href="#">tableau</a></h3>
+							<h3><a href="#">A&amp;E</a></h3>
 							<ul class="item-list">
-							{% fetch tableau from article with [
+							{% fetch ae from article with [
 								'where': 'status = 1',
 								'order': 'weight desc, created desc',
 								'limit': 4,
-								'withTags': ['tableau']
+								'withTags': ['arts_entertainment']
 							]%}
-							{% for article in tableau %}
+							{% for article in ae %}
 								<li><h4><a href="{{ article.url }}">{{ article.headline }}</a><span> | {{ article.created|date('M d') }}</span></h4></li>
 							{% endfor %}
 							</ul>

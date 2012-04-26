@@ -39,7 +39,9 @@
 		<div class="span12" id="top-ticker">
 			<div class="row">
 				<div class="span6"><div class="half box">
-					<time>February 15, 2012 | Rain 35 F | 7-Day Forecast | Charlottesville, VA</time>
+					<time>
+						February 15, 2012 | <img src="{{ ('assets/images/weathericons/'~weather.icon)|asset }}" alt="{{ weather }}" style="position:relative;top:-2px;" /> {{ weather }} {{ weather.temp }}&deg; F | <a href="{{ weather.url }}" target="_blank">7-Day Forecast</a> | Charlottesville, VA
+					</time>
 				</div></div>
 				<div class="span6"><div class="half box text-right">
 					<ul>
@@ -70,17 +72,17 @@
 			<div id="main-navigation"><div class="row">
 				<div class="span9">
 					<ul>
-						<li{% if not active or active == 'home' %} class="selected"{% endif %}><a href="#"><i class="icon-home icon-white"></i></a>
+						<li{% if not active or active == 'home' %} class="selected"{% endif %}><a href="{{ '/'|url }}"><i class="icon-home icon-white"></i></a>
 							<ul>
 								<li><span>Serving the University of Virginia community since 1890</span></li>
 							</ul>
-						</li><li{% if active == 'news' %} class="selected"{% endif %}><a href="#">News</a>
+						</li><li{% if active == 'news' %} class="selected"{% endif %}><a href="{{ 'section/news'|url }}">News</a>
 							<ul>
 								<li><a href="#">Grounds</a></li>
 								<li><a href="#">Local</a></li>
 								<li><a href="#">State</a></li>
 							</ul>
-						</li><li{% if active == 'sports' %} class="selected"{% endif %}><a href="#">Sports</a>
+						</li><li{% if active == 'sports' %} class="selected"{% endif %}><a href="{{ 'section/sports'|url }}">Sports</a>
 							<ul>
 								<li><a href="#">Baseball</a></li>
 								<li><a href="#">Football</a></li>
@@ -92,21 +94,21 @@
 								<li><a href="#">Women's Soccer</a></li>
 								<li><a href="#">Wrestling</a></li>
 							</ul>
-						</li><li{% if active == 'opinion' %} class="selected"{% endif %}><a href="#">Opinion</a>
+						</li><li{% if active == 'opinion' %} class="selected"{% endif %}><a href="{{ 'section/opinion'|url }}">Opinion</a>
 							<ul>
 								<li><a href="#">Columns</a></li>
 								<li><a href="#">Editorial Cartoons</a></li>
 								<li><a href="#">Lead Editorials</a></li>
 								<li><a href="#">Letters to the Editor</a></li>
 							</ul>
-						</li><li{% if active == 'aande' %} class="selected"{% endif %}><a href="#">A&amp;E</a>
+						</li><li{% if active == 'aande' %} class="selected"{% endif %}><a href="{{ 'section/ae'|url }}">A&amp;E</a>
 							<ul>
 								<li><a href="#">Art</a></li>
 								<li><a href="#">Movies</a></li>
 								<li><a href="#">Music</a></li>
 								<li><a href="#">Arts &amp; Entertainment Blog</a></li>
 							</ul>
-						</li><li{% if active == 'life' %} class="selected"{% endif %}><a href="#">Life</a>
+						</li><li{% if active == 'life' %} class="selected"{% endif %}><a href="{{ 'section/life'|url }}">Life</a>
 							<ul>
 								<li><a href="#">Columns</a></li>
 								<li><a href="#">Love Connection</a></li>
@@ -253,5 +255,16 @@
 <script type="text/javascript" src="{{ 'assets/dist/bootstrap.min.js'|asset }}"></script>
 <script type="text/javascript" src="{{ 'assets/dist/cavdaily.js'|asset }}"></script>
 {# include 'gryphon/main/tracker.tpl' #}
+
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=139321646130471";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>

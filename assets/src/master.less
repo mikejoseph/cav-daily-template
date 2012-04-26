@@ -64,6 +64,16 @@ hr.spacer {
 	margin: 0;
 	padding: 10px 0;
 
+	.byline {
+		font-size: 11px;
+		.arial-stack;
+		padding-top: 5px;
+
+		i {
+			color: @_uvaorange;
+		}
+	}
+
 	li {
 		list-style-type: none;
 		margin: 0;
@@ -71,6 +81,13 @@ hr.spacer {
 
 		margin-bottom: 10px;
 
+		h3 {
+			line-height: 1.1em;
+			font-weight: normal;
+			a {
+				color: @_darkblue;
+			}
+		}
 		h4 {
 			line-height: 1.1em;
 			font-weight: normal;
@@ -118,17 +135,15 @@ a {
 #social-buttons {
 	.arial-stack;
 
-	width: 240px;
-	margin: auto;
+	text-align: center;
 
-	i {
-		font-size: 20px;
-		position: relative;
-		top: 3px;
+	a {
+		display: inline-block;
+		margin: 0 10px;
 
-		color: @_uvaorange;
-
-		margin-right: 3px;
+		img {
+			max-width: 40px;
+		}
 	}
 }
 
@@ -187,6 +202,12 @@ footer {
 
 			&:first-child {
 				padding-left: 0;
+			}
+			a {
+				font-size: 14px;
+			}
+			h3 a {
+				font-size: 16px;
 			}
 		}
 	}

@@ -7180,11 +7180,26 @@ hr.spacer.half.hairline {
   margin: 0;
   padding: 10px 0;
 }
+.item-list .byline {
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  padding-top: 5px;
+}
+.item-list .byline i {
+  color: #cc3300;
+}
 .item-list li {
   list-style-type: none;
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+}
+.item-list li h3 {
+  line-height: 1.1em;
+  font-weight: normal;
+}
+.item-list li h3 a {
+  color: #091f5d;
 }
 .item-list li h4 {
   line-height: 1.1em;
@@ -7225,7 +7240,7 @@ header#main-header #flag {
   padding: 10px 0;
 }
 header#main-header #flag #main-flag {
-  max-width: 500px;
+  max-width: 480px;
 }
 header#main-header #top-ticker {
   background: #091f5d;
@@ -7234,6 +7249,9 @@ header#main-header #top-ticker {
 header#main-header #top-ticker time {
   font-size: 12px;
   line-height: 1.5em;
+}
+header#main-header #top-ticker time a {
+  color: #fff;
 }
 header#main-header #top-ticker ul {
   margin: 0;
@@ -7410,6 +7428,26 @@ header#main-header #main-navigation ul li ul span {
   text-align: center;
   margin: auto;
 }
+.abstract {
+  *zoom: 1;
+  *zoom: 1;
+}
+.abstract:before,
+.abstract:after {
+  display: table;
+  content: "";
+}
+.abstract:after {
+  clear: both;
+}
+.abstract:before,
+.abstract:after {
+  display: table;
+  content: "";
+}
+.abstract:after {
+  clear: both;
+}
 .abstract .by-line {
   font-family: Arial, sans-serif;
   font-size: 11px;
@@ -7436,6 +7474,13 @@ header#main-header #main-navigation ul li ul span {
   font-size: 22px;
 }
 .abstract.three-column img {
+  float: left;
+  padding: 0 10px 5px 0;
+}
+.abstract.four-column h3 a {
+  color: #091f5d;
+}
+.abstract.four-column img {
   float: left;
   padding: 0 10px 5px 0;
 }
@@ -7745,15 +7790,14 @@ h4 .label {
 }
 #social-buttons {
   font-family: Arial, sans-serif;
-  width: 240px;
-  margin: auto;
+  text-align: center;
 }
-#social-buttons i {
-  font-size: 20px;
-  position: relative;
-  top: 3px;
-  color: #cc3300;
-  margin-right: 3px;
+#social-buttons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+#social-buttons a img {
+  max-width: 40px;
 }
 .nav-tabs {
   font-family: Arial, sans-serif;
@@ -7857,6 +7901,12 @@ footer ul li {
 }
 footer ul li:first-child {
   padding-left: 0;
+}
+footer ul li a {
+  font-size: 14px;
+}
+footer ul li h3 a {
+  font-size: 16px;
 }
 footer p {
   font-size: 12px;

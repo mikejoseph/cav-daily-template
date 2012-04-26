@@ -1,7 +1,6 @@
 {% extends "gryphon/base.tpl" %}
 {% block title %} :: {{ section.name }}{% endblock %}
 {% block activeNav %}{{ active }}{% endblock %}
-{% block flag %}{{ section.name|upper }}{% endblock %}
 
 {% block links %}
 <link rel="alternate" type="application/rss+xml" title="{{ config.get('gryphon:publication:name') }} :: {{ section.name }}" href="{{ (section.url~'.xml')|url }}" />
@@ -9,60 +8,67 @@
 
 {% block content %}
 {% set topStory = articles.shift() %}
-{% set centerStories = articles.shift(6) %}
-{% set sidebar = articles.shift(2) %}
+{% set secondary = articles.shift(4) %}
 
 {% import "macros/article.tpl" as articleRender %}
 {% import "macros/meta.tpl" as metaRender %}
 
-{% include 'gryphon/ads/leaderboard_728x90.tpl' %}
+	<div class="row">
+		<div class="span8">
+			<div class="row">
+				<div class="span5">
+					{{ articleRender.dom(topStory) }}
 
-<div class="grid_8">
-	<div class="grid_6 alpha">
-		{{ articleRender.dom(topStory) }}
+					<hr class="hairline double spacer" />
 
-		<ul class="hat mb">
-			{% for article in centerStories %}
-				{{ articleRender.list(article) }}
-			{% endfor %}
-		</ul>
+					{% include 'gryphon/main/modules/featured-mm.tpl' %}
 
-	</div>
+				</div>
+				<div class="span3">
+					{% for article in secondary %}
+						{{ articleRender.fourCol(article) }}
+						<hr class="spacer" />
+					{% endfor %}
+				</div>
+			</div>
 
-	<div class="grid_2 omega">
-		{% for article in sidebar %}
-			{{ articleRender.sidebar(article) }}
-		{% endfor %}
-		
-	</div>
-	
-	
-	<div class="clear mb"> </div>
-	
-	<div class="grid_4 alpha">
-		{% include 'gryphon/main/modules/section_blogs.tpl' %}
-	
-		<div class="wrap mmb">
-			<h6 class="ind">More {{ section.name }}</h6>
+			<hr class="half hairline" />
+
+			<h3>More {{ section.name }}</h3>
+
+			<hr class="half spacer" />
+			<div class="row">
+				<div class="span4">
+					<ul class="item-list">
+					{% for article in articles.shift((articles.length/2)-1) %}
+						<li>
+							<h3><a href="{{ article.url }}">{{ article.headline }}</a></h3>
+							<aside class="byline">
+							 by {{ article.authors.splat('name')|join(' and ') }} | {{ article.created|timeSince }} | <a href="{{ article.url }}"><i class="icon-comment"></i> </a>
+							</aside>
+						</li>
+					{% endfor %}
+					</ul>
+				</div>
+				<div class="span4">
+					<ul class="item-list">
+					{% for article in articles %}
+						<li>
+							<h3><a href="{{ article.url }}">{{ article.headline }}</a></h3>
+							<aside class="byline">
+							 by {{ article.authors.splat('name')|join(' and ') }} | {{ article.created|timeSince }} | <a href="{{ article.url }}"><i class="icon-comment"></i> </a>
+							</aside>
+						</li>
+					{% endfor %}
+					</ul>
+				</div>
+			</div>
 		</div>
-		
-		<ul class="ind">
-			{% for article in articles %}
-				<li><a href="{{ article.url }}">{{ article.headline }}</a> {{ metaRender.dateLine(article.modified) }}</li>
-			{% endfor %}
-		</ul>
-		
-		<h4 class="ind"><a href="{{ 'search'|url }}?a=1&amp;tg={{ section.tags.splat('name')|join(',') }}">{{ section.name }} archive &raquo;</a></h4>
-	</div>
-	
-	<div class="grid_4 omega">
-		{% include 'gryphon/main/modules/section_mm.tpl' %}
-	</div>
-</div>
+		<div class="span4">
 
-<div class="grid_4">
-	{% include 'gryphon/main/sidebar/section_min.tpl' %}
-</div>
+			{% include 'gryphon/main/sidebar/default.tpl' %}
+		</div>
+	</div>
 
-<div class="clear mbb"> </div>
+
 {% endblock content %}

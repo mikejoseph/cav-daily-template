@@ -1,7 +1,9 @@
-<div class="btn-group" id="social-buttons">
-	<a href="#" class="btn"><i class="icon-twitter-sign"></i> Follow</a>
-	<a href="#" class="btn"><i class="icon-facebook-sign"></i> Friend</a>
-	<a href="#" class="btn"><i class="icon-heart"></i> Feed</a>
+
+<div id="social-buttons">
+	<a href="http://facebook.com"><img src="{{ 'assets/images/icons/facebook-57.png'|asset }}" class="flex-image" /></a>
+	<a href="http://twitter.com"><img src="{{ 'assets/images/icons/twitter-57.png'|asset }}" class="flex-image" /></a>
+	<a href="http://youtube.com"><img src="{{ 'assets/images/icons/youtube-57.png'|asset }}" class="flex-image" /></a>
+	<a href="{{ 'page/feeds'|url }}"><img src="{{ 'assets/images/icons/rss-57.png'|asset }}" class="flex-image" /></a>
 </div>
 
 <hr class="double hairline" />
